@@ -1,0 +1,18 @@
+{
+  "name": "eslint-config-cecilia",
+  "version": "0.0.1",
+  "description": "ESLint configuration for awesome JavaScript projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "javascript",
+    "react",
+    "node"
+  ],
+  "author": "Sandro Miguel Marques",
+  "license": "MIT"
+}
