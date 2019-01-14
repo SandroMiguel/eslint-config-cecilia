@@ -23,7 +23,7 @@
     "url": "http://sandromiguel.com"
   },
   "license": "MIT",
-  "devDependencies": {
+  "peerDependencies": {
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-const-case": "^1.0.4",
