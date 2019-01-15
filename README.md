@@ -15,6 +15,14 @@ Install ESLint config Cecilia from Yarn.
 yarn add eslint-config-cecilia --dev
 ```
 
+### Usage
+Add `.eslintrc.js` on your project root directory.
+```
+module.exports = {
+    'extends': 'cecilia'
+};
+```
+
 ## Questions
 If you have questions tweet me at [@SandroMiguel77](https://twitter.com/SandroMiguel77) or [open an issue](https://github.com/SandroMiguel/Snippets/issues/new).
 
