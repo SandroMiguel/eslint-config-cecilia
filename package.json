@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cecilia",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ESLint configuration for awesome projects",
   "main": "index.js",
   "scripts": {
