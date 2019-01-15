@@ -2,7 +2,19 @@
 
 # Welcome to ESLint config Cecilia
 
-ESLint configuration for awesome projects.
+[![npm version](https://badge.fury.io/js/eslint-config-cecilia.svg)](https://badge.fury.io/js/eslint-config-cecilia)
+[![Dependency Status](https://david-dm.org/SandroMiguel/eslint-config-cecilia.svg)](https://david-dm.org/SandroMiguel/eslint-config-cecilia)
+[![license](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](LICENSE)
+
+**ESLint configuration for awesome projects.**
+
+ESLint config Cecilia is a [sharable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs.html) 
+used in JavaScript projects ([Vanilla.js](http://vanilla-js.com/), [React.js](https://reactjs.org/) or 
+[Node.js](https://nodejs.org/)).
+
+The goal of the ESLint config Cecilia is to keep the code clean and consistent.
+
+ESLint config Cecilia rules are based on [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
@@ -12,19 +24,49 @@ ESLint configuration for awesome projects.
 
 ## Getting Started
 
-### Install with Yarn
-Install ESLint config Cecilia from Yarn.
-```
-yarn add eslint-config-cecilia --dev
-```
+### Install
+Install ESLint config Cecilia.
+
+`yarn add eslint-config-cecilia --dev` or `npm install -D eslint-config-cecilia`
 
 ### Usage
-Add `.eslintrc.js` on your project root directory.
+
+#### Step 1 - Create a `.eslintrc` file in your project root directory and use the `extends` attribute.
+Paste this code to extend the ESLint ruleset:
 ```
-module.exports = {
-    'extends': 'cecilia'
-};
+{
+    "extends": "cecilia"
+}
 ```
+
+#### Step 2 - Add scripts to the `package.json` file
+Open the `package.json` file and add the following scripts entries:
+```
+  ...
+  
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
+  },
+  
+  ...
+```
+
+#### Step 3 - Run the script
+`yarn lint` or `npm run lint` to lint your code.
+`yarn lint-fix` or `npm run lint-fix` to lint and fix your code.
+
+## Credits
+- Linting - [ESLint](https://eslint.org/)
+- Rules base - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+- Plugin - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
+- Plugin - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+- Plugin - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+- Plugin - [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
+- Plugin - [eslint-plugin-const-case](https://www.npmjs.com/package/eslint-plugin-const-case)
+- IDE coding style - [EditorConfig](https://editorconfig.org/)
+- Logo gear - made by [Freepik](http://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is 
+licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 
 ## Contributing
 Want to contribute? All contributions are welcome. Read the [contributing guide](CONTRIBUTING.md).
