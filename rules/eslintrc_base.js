@@ -21,8 +21,6 @@ module.exports = {
         align: 'colon',
       },
     }],
-    // Indentation set to 2 spaces
-    indent: ['error', 2],
     // Usage of Spacing in Template Strings
     'template-curly-spacing': ['off', 'always'],
     // Consistent spacing inside braces
@@ -85,5 +83,7 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     // CamelCase
     camelcase: ['error', {properties: 'always'}],
+    // Require or disallow semicolons instead of ASI
+    semi: ['error', 'never'],
   },
 };
