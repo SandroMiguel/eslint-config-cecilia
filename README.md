@@ -77,7 +77,7 @@ licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 Want to contribute? All contributions are welcome. Read the [contributing guide](CONTRIBUTING.md).
 
 ## Questions
-If you have questions tweet me at [@sandro_m_m](https://twitter.com/sandro_m_m) or [open an issue](issues/new).
+If you have questions tweet me at [@sandro_m_m](https://twitter.com/sandro_m_m) or [open an issue](/issues/new).
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
