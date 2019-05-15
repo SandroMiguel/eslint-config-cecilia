@@ -8,8 +8,8 @@
 
 **ESLint configuration for awesome projects.**
 
-ESLint config Cecilia is a [sharable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs.html) 
-used in JavaScript projects ([Vanilla.js](http://vanilla-js.com/), [React.js](https://reactjs.org/) or 
+ESLint config Cecilia is a [sharable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs.html)
+used in JavaScript projects ([Vanilla.js](http://vanilla-js.com/), [React.js](https://reactjs.org/) or
 [Node.js](https://nodejs.org/)).
 
 The goal of the ESLint config Cecilia is to keep the code clean and consistent.
@@ -24,14 +24,18 @@ ESLint config Cecilia rules are based on [eslint-config-airbnb](https://www.npmj
 
 ## Getting Started
 
-### Install
+### Installation
 Install ESLint config Cecilia.
 
-`yarn add eslint-config-cecilia --dev` or `npm install -D eslint-config-cecilia`
+#### Step 1 - Install with Yarn
+`yarn add eslint-config-cecilia --dev`
+
+##### Or install with npm
+`npm install -D eslint-config-cecilia`
 
 ### Usage
 
-#### Step 1 - Create a `.eslintrc` file in your project root directory and use the `extends` attribute.
+#### Step 2 - Create a `.eslintrc` file in your project root directory and use the `extends` attribute.
 Paste this code to extend the ESLint ruleset:
 ```
 {
@@ -39,20 +43,20 @@ Paste this code to extend the ESLint ruleset:
 }
 ```
 
-#### Step 2 - Add scripts to the `package.json` file
+#### Step 3 - Add scripts to the `package.json` file
 Open the `package.json` file and add the following scripts entries:
 ```
   ...
-  
+
   "scripts": {
     "lint": "eslint .",
     "lint-fix": "eslint . --fix"
   },
-  
+
   ...
 ```
 
-#### Step 3 - Run the script
+#### Step 4 - Run the script
 `yarn lint` or `npm run lint` to lint your code.
 
 `yarn lint-fix` or `npm run lint-fix` to lint and fix your code.
@@ -66,7 +70,7 @@ Open the `package.json` file and add the following scripts entries:
 - Plugin - [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
 - Plugin - [eslint-plugin-const-case](https://www.npmjs.com/package/eslint-plugin-const-case)
 - IDE coding style - [EditorConfig](https://editorconfig.org/)
-- Logo gear - made by [Freepik](http://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is 
+- Logo gear - made by [Freepik](http://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is
 licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 
 ## Contributing
