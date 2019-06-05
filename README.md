@@ -50,7 +50,7 @@ Open the `package.json` file and add the following scripts entries:
 
   "scripts": {
     "lint": "eslint .",
-    "lint-fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix"
   },
 
   ...
