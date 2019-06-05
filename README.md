@@ -59,7 +59,7 @@ Open the `package.json` file and add the following scripts entries:
 #### Step 4 - Run the script
 `yarn lint` or `npm run lint` to lint your code.
 
-`yarn lint-fix` or `npm run lint-fix` to lint and fix your code.
+`yarn lint:fix` or `npm run lint:fix` to lint and fix your code.
 
 ## Credits
 - Linting - [ESLint](https://eslint.org/)
