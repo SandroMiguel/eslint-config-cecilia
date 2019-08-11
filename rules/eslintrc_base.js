@@ -1,7 +1,12 @@
 module.exports = {
-  extends: 'airbnb',
-  plugins: ['const-case', 'jsdoc'],
+  extends: ['airbnb', 'prettier', 'prettier/react'],
+  plugins: ['const-case', 'jsdoc', 'prettier', 'react', 'react-hooks'],
   rules: {
+    // Prettier
+    'prettier/prettier': ['error'],
+    // React Hooks
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     // Spaces inside of parentheses
     'space-in-parens': ['off', 'always'],
     // Space before function parenthesis
