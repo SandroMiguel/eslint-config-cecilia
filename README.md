@@ -83,6 +83,10 @@ Open the `package.json` file and add the following scripts entries:
 
 `yarn lint:format` or `npm run lint:format` to format your code.
 
+#### Pro tip
+
+Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions for Visual Studio Code.
+
 ## Credits
 
 - Linting - [ESLint](https://eslint.org/)
