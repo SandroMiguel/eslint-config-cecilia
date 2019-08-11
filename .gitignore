@@ -1,4 +1,21 @@
-/.idea
-/.others
-/node_modules
-desktop.ini
+## Editor directory
+**/.idea
+**/.vscode
+
+## Ignore NPM 'node_modules' directory
+**/node_modules
+
+## Ignore Composer 'vendor' directory
+**/vendor
+
+## Ignore log files
+**/log
+yarn-error.log*
+
+## Ignore generated source maps
+*.map
+
+## Other files to ignore (e.g. credentials)
+.env
+**/storage
+**/.others

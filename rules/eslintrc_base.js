@@ -1,40 +1,45 @@
 module.exports = {
-  extends: 'airbnb',
-  plugins: [
-    'const-case',
-    'jsdoc',
-  ],
+  extends: ['airbnb', 'prettier', 'prettier/react'],
+  plugins: ['const-case', 'jsdoc', 'prettier', 'react', 'react-hooks'],
   rules: {
+    // Prettier
+    'prettier/prettier': ['error'],
+    // React Hooks
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     // Spaces inside of parentheses
     'space-in-parens': ['off', 'always'],
     // Space before function parenthesis
-    'space-before-function-paren': ['error', {anonymous: 'ignore', named: 'ignore'}],
+    'space-before-function-paren': ['error', { anonymous: 'ignore', named: 'ignore' }],
     // Consistent spacing between keys and values in object literal properties
-    'key-spacing': ['off', {
-      singleLine: {
-        beforeColon: false,
-        afterColon: true,
+    'key-spacing': [
+      'off',
+      {
+        singleLine: {
+          beforeColon: false,
+          afterColon: true,
+        },
+        multiLine: {
+          beforeColon: true,
+          afterColon: true,
+          align: 'colon',
+        },
       },
-      multiLine: {
-        beforeColon: true,
-        afterColon: true,
-        align: 'colon',
-      },
-    }],
+    ],
     // Usage of Spacing in Template Strings
     'template-curly-spacing': ['off', 'always'],
     // Consistent spacing inside braces
     'object-curly-spacing': ['off', 'always'],
     // No more than one blank line
-    'no-multiple-empty-lines': ['error', {max: 1, maxEOF: 0, maxBOF: 0}],
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
     // Limit Cyclomatic Complexity
-    complexity: ['error', {max: 6}],
+    complexity: ['error', { max: 6 }],
     // Multiple spaces
-    'no-multi-spaces': ['error', {exceptions: {VariableDeclarator: true}}],
+    'no-multi-spaces': ['error', { exceptions: { VariableDeclarator: true } }],
     // Maximum line length
-    'max-len': ['error', {code: 120}],
+    'max-len': ['error', { code: 120 }],
     // New line after import
-    'import/newline-after-import': ['error', {count: 0}],
+    'import/newline-after-import': ['error', { count: 0 }],
     // Dynamic require
     'import/no-dynamic-require': 'off',
     // Ensures an imported module can be resolved to a module on the local filesystem
@@ -82,8 +87,8 @@ module.exports = {
     // Consistent linebreak style
     'linebreak-style': ['error', 'unix'],
     // CamelCase
-    camelcase: ['error', {properties: 'always'}],
+    camelcase: ['error', { properties: 'always' }],
     // Require or disallow semicolons instead of ASI
     semi: ['error', 'never'],
   },
-};
+}
