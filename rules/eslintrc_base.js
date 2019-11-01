@@ -38,8 +38,6 @@ module.exports = {
     'no-multi-spaces': ['error', { exceptions: { VariableDeclarator: true } }],
     // Maximum line length
     'max-len': ['error', { code: 120 }],
-    // New line after import
-    'import/newline-after-import': ['error', { count: 0 }],
     // Dynamic require
     'import/no-dynamic-require': 'off',
     // Ensures an imported module can be resolved to a module on the local filesystem
