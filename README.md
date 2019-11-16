@@ -45,7 +45,7 @@ Paste this code to extend the ESLint ruleset:
 
 ```
 module.exports = {
-  extends: './index.js',
+  extends: 'cecilia',
 }
 ```
 
