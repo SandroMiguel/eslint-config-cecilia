@@ -2,48 +2,18 @@ module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['const-case', 'jsdoc', 'prettier', 'react', 'react-hooks'],
   rules: {
-    // Prettier
-    'prettier/prettier': ['error'],
-    // React Hooks
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-    // Spaces inside of parentheses
-    'space-in-parens': ['off', 'always'],
-    // Space before function parenthesis
-    'space-before-function-paren': ['error', { anonymous: 'ignore', named: 'ignore' }],
-    // Consistent spacing between keys and values in object literal properties
-    'key-spacing': [
-      'off',
-      {
-        singleLine: {
-          beforeColon: false,
-          afterColon: true,
-        },
-        multiLine: {
-          beforeColon: true,
-          afterColon: true,
-          align: 'colon',
-        },
-      },
-    ],
-    // Usage of Spacing in Template Strings
-    'template-curly-spacing': ['off', 'always'],
-    // Consistent spacing inside braces
-    'object-curly-spacing': ['off', 'always'],
-    // No more than one blank line
-    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
+    // CamelCase
+    camelcase: ['error', { properties: 'always' }],
+    // Class methods utilize 'this'
+    'class-methods-use-this': ['off'],
     // Limit Cyclomatic Complexity
     complexity: ['error', { max: 6 }],
-    // Multiple spaces
-    'no-multi-spaces': ['error', { exceptions: { VariableDeclarator: true } }],
-    // Maximum line length
-    'max-len': ['error', { code: 120 }],
+    // Uppercase const strings
+    'const-case/uppercase': ['warn'],
     // Dynamic require
     'import/no-dynamic-require': 'off',
     // Ensures an imported module can be resolved to a module on the local filesystem
     'import/no-unresolved': ['off'],
-    // Uppercase const strings
-    'const-case/uppercase': ['warn'],
     // Ensures that parameter names in JSDoc match those in the function declaration
     'jsdoc/check-param-names': 'warn',
     // Reports invalid block tag names
@@ -70,23 +40,55 @@ module.exports = {
     'jsdoc/require-returns-description': 'warn',
     // Requires that @returns tag has type value
     'jsdoc/require-returns-type': 'warn',
-    // Undeclared Variables
-    'no-undef': ['off'],
-    // Arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': ['off'],
-    // Unused Expressions
-    'no-unused-expressions': ['off'],
-    // Dangling underscores in identifiers
-    'no-underscore-dangle': ['warn'],
-    // Assignment in return Statement
-    'no-return-assign': ['off'],
-    // Class methods utilize 'this'
-    'class-methods-use-this': ['off'],
+    // Consistent spacing between keys and values in object literal properties
+    'key-spacing': [
+      'off',
+      {
+        singleLine: {
+          beforeColon: false,
+          afterColon: true,
+        },
+        multiLine: {
+          beforeColon: true,
+          afterColon: true,
+          align: 'colon',
+        },
+      },
+    ],
     // Consistent linebreak style
     'linebreak-style': ['error', 'unix'],
-    // CamelCase
-    camelcase: ['error', { properties: 'always' }],
+    // Maximum line length
+    'max-len': ['error', { code: 120 }],
+    // Arrow functions where they could be confused with comparisons
+    'no-confusing-arrow': ['off'],
+    // No more than one blank line
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
+    // Multiple spaces
+    'no-multi-spaces': ['error', { exceptions: { VariableDeclarator: true } }],
+    // Undeclared Variables
+    'no-undef': ['off'],
+    // Dangling underscores in identifiers
+    'no-underscore-dangle': ['warn'],
+    // Unused Expressions
+    'no-unused-expressions': ['off'],
+    // Assignment in return Statement
+    'no-return-assign': ['off'],
+    // Consistent spacing inside braces
+    'object-curly-spacing': ['off', 'always'],
+    // Prettier
+    'prettier/prettier': ['error'],
+    // React Hooks
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    // Allow both '.jsx' and '.js' extensions for JSX
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     // Require or disallow semicolons instead of ASI
     semi: ['error', 'never'],
+    // Spaces inside of parentheses
+    'space-in-parens': ['off', 'always'],
+    // Space before function parenthesis
+    'space-before-function-paren': ['error', { anonymous: 'ignore', named: 'ignore' }],
+    // Usage of Spacing in Template Strings
+    'template-curly-spacing': ['off', 'always'],
   },
 }

@@ -49,6 +49,19 @@ module.exports = {
 }
 ```
 
+Optional - override rules
+
+```
+module.exports = {
+  extends: 'cecilia',
+  rules: {
+    //
+    // rules to override.
+    //
+  }
+}
+```
+
 #### Step 3 - Create a `.prettierrc.js` file in your project root directory and change some rules.
 
 ```
