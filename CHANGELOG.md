@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.4.2...v1.5.0) (2019-11-26)
+
+
+### Features
+
+* **eslintrc_base.js:** add react/jsx-filename-extension rule ([46b06fa](https://github.com/SandroMiguel/eslint-config-cecilia/commit/46b06fa52112da4e283b1f894dee5bf650b00e6c))
+
 ### [1.4.2](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.4.1...v1.4.2) (2019-11-16)
 
 ### [1.4.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.4.0...v1.4.1) (2019-11-01)
