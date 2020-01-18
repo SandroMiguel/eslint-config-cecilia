@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.5.0...v1.6.0) (2020-01-18)
+
+
+### Features
+
+* **eslintrc_base.js:** no-extraneous-dependencies update ([c2c784f](https://github.com/SandroMiguel/eslint-config-cecilia/commit/c2c784f3340c742b8c49a92588c6172b7a3304b3))
+
 ## [1.5.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.4.2...v1.5.0) (2019-11-26)
 
 

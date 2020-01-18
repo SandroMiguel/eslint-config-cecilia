@@ -12,6 +12,11 @@ module.exports = {
     'const-case/uppercase': ['warn'],
     // Dynamic require
     'import/no-dynamic-require': 'off',
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: true, optionalDependencies: true, peerDependencies: true },
+    ],
     // Ensures an imported module can be resolved to a module on the local filesystem
     'import/no-unresolved': ['off'],
     // Ensures that parameter names in JSDoc match those in the function declaration
