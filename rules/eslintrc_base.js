@@ -12,7 +12,7 @@ module.exports = {
     'const-case/uppercase': ['warn'],
     // Dynamic require
     'import/no-dynamic-require': 'off',
-    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    // Forbid the use of extraneous packages
     'import/no-extraneous-dependencies': [
       'error',
       { devDependencies: true, optionalDependencies: true, peerDependencies: true },
@@ -87,6 +87,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     // Allow both '.jsx' and '.js' extensions for JSX
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    // Prevent missing props validation in a React component definition
+    'react/prop-types': 0,
     // Require or disallow semicolons instead of ASI
     semi: ['error', 'never'],
     // Spaces inside of parentheses
