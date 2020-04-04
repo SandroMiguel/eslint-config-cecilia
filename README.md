@@ -8,11 +8,11 @@
 
 **ESLint configuration for awesome projects.**
 
-ESLint config Cecilia is a [sharable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs.html)
+ESLint config Cecilia is an opinionated [shareable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs.html)
 used in JavaScript projects ([Vanilla.js](http://vanilla-js.com/), [React.js](https://reactjs.org/) or
 [Node.js](https://nodejs.org/)).
 
-The goal of the ESLint config Cecilia is to keep the code clean and consistent.
+The goal of the ESLint config Cecilia is to keep the code clean and consistent using [Prettier](https://www.npmjs.com/package/prettier) and [ESLint](https://eslint.org/).
 
 ESLint config Cecilia rules are based on [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
@@ -37,7 +37,7 @@ Install ESLint config Cecilia.
 
 `npm install -D eslint-config-cecilia`
 
-### Usage
+### Configure
 
 #### Step 2 - Create a `.eslintrc.js` file in your project root directory and use the `extends` attribute.
 
@@ -88,6 +88,8 @@ Open the `package.json` file and add the following scripts entries:
   ...
 ```
 
+### Usage
+
 #### Step 5 - Run the script
 
 `yarn lint` or `npm run lint` to lint your code.
@@ -96,7 +98,7 @@ Open the `package.json` file and add the following scripts entries:
 
 `yarn lint:format` or `npm run lint:format` to format your code.
 
-#### Pro tip
+##### Pro tip
 
 Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions for Visual Studio Code.
 
