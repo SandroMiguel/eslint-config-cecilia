@@ -4,7 +4,8 @@
   "description": "ESLint configuration for awesome projects",
   "main": "index.js",
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -37,7 +38,6 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-const-case": "^1.2.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsdoc": "^22.1.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -49,8 +49,11 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^25.2.1",
     "cz-conventional-changelog": "^3.1.0",
     "husky": "^4.2.3",
+    "jest": "^25.2.7",
+    "react": "^16.13.1",
     "standard-version": "^7.1.0"
   }
 }
