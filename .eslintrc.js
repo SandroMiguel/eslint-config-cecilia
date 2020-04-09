@@ -1,3 +1,6 @@
 module.exports = {
-  extends: './index.js',
+  extends: ['airbnb', 'prettier', 'prettier/react', './index.js'],
+  env: {
+    jest: true,
+  },
 }
