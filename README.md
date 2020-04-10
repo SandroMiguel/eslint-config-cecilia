@@ -8,13 +8,17 @@
 
 **ESLint configuration for awesome projects.**
 
-ESLint config Cecilia is a [sharable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs.html)
-used in JavaScript projects ([Vanilla.js](http://vanilla-js.com/), [React.js](https://reactjs.org/) or
-[Node.js](https://nodejs.org/)).
+ESLint config Cecilia is an opinionated
+[shareable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs.html)
+used in JavaScript projects ([Vanilla.js](http://vanilla-js.com/),
+[React.js](https://reactjs.org/) or [Node.js](https://nodejs.org/)).
 
-The goal of the ESLint config Cecilia is to keep the code clean and consistent.
+The goal of the ESLint config Cecilia is to keep the code clean and consistent
+using [Prettier](https://www.npmjs.com/package/prettier) and
+[ESLint](https://eslint.org/).
 
-ESLint config Cecilia rules are based on [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
+ESLint config Cecilia rules are based on
+[eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
 ## Table of Contents
 
@@ -37,7 +41,7 @@ Install ESLint config Cecilia.
 
 `npm install -D eslint-config-cecilia`
 
-### Usage
+### Configure
 
 #### Step 2 - Create a `.eslintrc.js` file in your project root directory and use the `extends` attribute.
 
@@ -88,6 +92,8 @@ Open the `package.json` file and add the following scripts entries:
   ...
 ```
 
+### Usage
+
 #### Step 5 - Run the script
 
 `yarn lint` or `npm run lint` to lint your code.
@@ -96,36 +102,52 @@ Open the `package.json` file and add the following scripts entries:
 
 `yarn lint:format` or `npm run lint:format` to format your code.
 
-#### Pro tip
+##### Pro tip
 
-Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions for Visual Studio Code.
+Install
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+and
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+extensions for Visual Studio Code.
 
 ## Credits
 
 - Linting - [ESLint](https://eslint.org/)
-- Rules base config - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+- Rules base config -
+  [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
 - Code formatter config - [Prettier](https://www.npmjs.com/package/prettier)
-- Plugin - [eslint-plugin-const-case](https://www.npmjs.com/package/eslint-plugin-const-case)
-- Plugin - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
-- Plugin - [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
-- Plugin - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
-- Plugin - [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
-- Plugin - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-- Plugin - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- Plugin -
+  [eslint-plugin-const-case](https://www.npmjs.com/package/eslint-plugin-const-case)
+- Plugin -
+  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
+- Plugin -
+  [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
+- Plugin -
+  [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+- Plugin -
+  [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
+- Plugin -
+  [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+- Plugin -
+  [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 - IDE coding style - [EditorConfig](https://editorconfig.org/)
-- Logo gear - made by [Freepik](http://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is
-  licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
+- Logo gear - made by [Freepik](http://www.freepik.com) from
+  [www.flaticon.com](https://www.flaticon.com/) is licensed by
+  [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 
 ## Contributing
 
-Want to contribute? All contributions are welcome. Read the [contributing guide](CONTRIBUTING.md).
+Want to contribute? All contributions are welcome. Read the
+[contributing guide](CONTRIBUTING.md).
 
 ## Questions
 
-If you have questions tweet me at [@sandro_m_m](https://twitter.com/sandro_m_m) or [open an issue](../../issues/new).
+If you have questions tweet me at [@sandro_m_m](https://twitter.com/sandro_m_m)
+or [open an issue](../../issues/new).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
+for details
 
 **~ sharing is caring ~**

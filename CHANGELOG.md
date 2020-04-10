@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.0.0...v2.0.1) (2020-04-10)
+
+
+### Bug Fixes
+
+* add .eslintrc.js to the whitelist ([093cd28](https://github.com/SandroMiguel/eslint-config-cecilia/commit/093cd28e2c932009ba9d3a91f38e60235d0ed2d9))
+
+## [2.0.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.7.1...v2.0.0) (2020-04-10)
+
+
+### Features
+
+* **.editorconfig:** change max line length from 120 to 80 ([2e6d016](https://github.com/SandroMiguel/eslint-config-cecilia/commit/2e6d016c2dbb287ab45eeb77e1b5eee26b57231b))
+* ignore test/ directory ([27aff95](https://github.com/SandroMiguel/eslint-config-cecilia/commit/27aff9527c1eb8968998ee3d67e173428175fc6f))
+* **.prettierrc.js:** add arrowParens property ([324bb7d](https://github.com/SandroMiguel/eslint-config-cecilia/commit/324bb7daf96d2037d4bc697c628c37c64bb84561))
+* **rules:** organization and clean up ([e872b6e](https://github.com/SandroMiguel/eslint-config-cecilia/commit/e872b6ef110ed48a77762c64acf0ab67fe157264))
+
 ### [1.7.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.7.0...v1.7.1) (2020-03-14)
 
 ## [1.7.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.6.0...v1.7.0) (2020-01-19)

@@ -1,12 +1,8 @@
 ## Editor directory
-**/.idea
 **/.vscode
 
 ## Ignore NPM 'node_modules' directory
 **/node_modules
-
-## Ignore Composer 'vendor' directory
-**/vendor
 
 ## Ignore log files
 **/log
