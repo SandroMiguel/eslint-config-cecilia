@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.0.0...v2.0.1) (2020-04-10)
+
+
+### Bug Fixes
+
+* add .eslintrc.js to the whitelist ([093cd28](https://github.com/SandroMiguel/eslint-config-cecilia/commit/093cd28e2c932009ba9d3a91f38e60235d0ed2d9))
+
 ## [2.0.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v1.7.1...v2.0.0) (2020-04-10)
 
 
