@@ -1,12 +1,16 @@
 {
   "name": "eslint-config-cecilia",
-  "version": "1.7.1",
+  "version": "2.0.0",
   "description": "ESLint configuration for awesome projects",
   "main": "index.js",
   "scripts": {
     "release": "standard-version",
     "test": "jest"
   },
+  "files": [
+    "index.js",
+    "rules"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SandroMiguel/eslint-config-cecilia.git"
@@ -43,16 +47,16 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0",
-    "prettier": "^2.0.2"
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "prettier": "^2.0.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jest": "^25.2.1",
     "cz-conventional-changelog": "^3.1.0",
-    "husky": "^4.2.3",
-    "jest": "^25.2.7",
+    "husky": "^4.2.5",
+    "jest": "^25.3.0",
     "react": "^16.13.1",
     "standard-version": "^7.1.0"
   }
