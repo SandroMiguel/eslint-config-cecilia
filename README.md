@@ -66,6 +66,10 @@ module.exports = {
 }
 ```
 
+##### Pro tip
+
+Check the [list of available rules](https://eslint.org/docs/rules/).
+
 #### Step 3 - Create a `.prettierrc.js` file in your project root directory and change some rules.
 
 ```
