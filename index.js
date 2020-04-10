@@ -6,4 +6,7 @@ module.exports = {
     './rules/react-hooks.js',
     './rules/react.js',
   ],
+  env: {
+    jest: true,
+  },
 }

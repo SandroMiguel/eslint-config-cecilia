@@ -8,6 +8,7 @@
     "test": "jest"
   },
   "files": [
+    ".eslintrc.js",
     "index.js",
     "rules"
   ],

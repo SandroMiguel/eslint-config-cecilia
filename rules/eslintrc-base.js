@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['airbnb'],
   rules: {
     // Require parens in arrow function arguments
     // https://eslint.org/docs/rules/arrow-parens
