@@ -53,7 +53,9 @@ module.exports = {
 }
 ```
 
-Optional - override rules
+**Optional - Override Rules**
+
+For more information, see "[Configuring Rules](https://eslint.org/docs/user-guide/configuring#configuring-rules)" in the ESLint Help.
 
 ```
 module.exports = {
@@ -63,6 +65,21 @@ module.exports = {
     // rules to override.
     //
   }
+}
+```
+
+**Optional - Specifying Environments**
+
+For more information, see "[Specifying Environments](https://eslint.org/docs/user-guide/configuring#specifying-environments)" in the ESLint Help.
+
+```
+module.exports = {
+  extends: 'cecilia',
+  env: {
+    browser: true,
+    node: true,
+    ...
+  },
 }
 ```
 
