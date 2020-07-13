@@ -59,6 +59,6 @@
     "husky": "^4.2.5",
     "jest": "^25.3.0",
     "react": "^16.13.1",
-    "standard-version": "^7.1.0"
+    "standard-version": "^8.0.1"
   }
 }
