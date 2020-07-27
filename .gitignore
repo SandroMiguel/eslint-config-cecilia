@@ -16,4 +16,4 @@ yarn-error.log*
 .npmrc
 **/*.bak
 **/storage
-**/.others
+**/.misc

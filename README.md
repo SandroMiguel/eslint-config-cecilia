@@ -35,11 +35,15 @@ Install ESLint config Cecilia.
 
 #### Step 1 - Install with Yarn
 
-`yarn add eslint-config-cecilia --dev`
+```sh
+yarn add eslint-config-cecilia --dev
+```
 
 ##### Or install with npm
 
-`npm install -D eslint-config-cecilia`
+```sh
+npm install -D eslint-config-cecilia
+```
 
 ### Configure
 
