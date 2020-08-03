@@ -111,7 +111,7 @@ Open the `package.json` file and add the following scripts entries:
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "lint:format": "prettier --write \"./**/*.{js,jsx,json}\""
+    "format": "prettier --write './**/*.{js,jsx,json}'"
   },
 
   ...
