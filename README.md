@@ -125,7 +125,7 @@ Open the `package.json` file and add the following scripts entries:
 
 `yarn lint:fix` or `npm run lint:fix` to lint and fix your code.
 
-`yarn lint:format` or `npm run lint:format` to format your code.
+`yarn format` or `npm run format` to format your code.
 
 ##### Pro tip
 
