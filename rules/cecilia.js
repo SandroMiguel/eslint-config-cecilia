@@ -1,5 +1,4 @@
 module.exports = {
-  extends: ['airbnb'],
   rules: {
     // Require parens in arrow function arguments
     // https://eslint.org/docs/rules/arrow-parens
@@ -8,8 +7,6 @@ module.exports = {
     // Require CamelCase
     // https://eslint.org/docs/rules/camelcase
     camelcase: ['error', { properties: 'always' }],
-
-    'comma-dangle': ['error', 'always-multiline'],
 
     // Disallow multiple empty lines
     // https://eslint.org/docs/rules/no-multiple-empty-lines

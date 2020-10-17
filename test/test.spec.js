@@ -16,7 +16,8 @@ expect.extend({
       }
     }
     return {
-      message: () => `This test case expected violation of rule ${this.utils.printExpected(
+      message: () =>
+        `This test case expected violation of rule ${this.utils.printExpected(
           expected,
         )} but received ${this.utils.printReceived(
           received,
