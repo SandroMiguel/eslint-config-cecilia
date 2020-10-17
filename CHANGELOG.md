@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.0.3...v2.1.0) (2020-10-17)
+
+
+### Features
+
+* remove max-len ([96ec465](https://github.com/SandroMiguel/eslint-config-cecilia/commit/96ec4656d28121e6b3fffc103cd1549bebc50f99))
+* update rules order ([59818dc](https://github.com/SandroMiguel/eslint-config-cecilia/commit/59818dc4feb6b2f1e230e6e90ccf8eefad127efa))
+
 ### [2.0.3](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.0.1...v2.0.3) (2020-05-21)
 
 ### [2.0.2](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.0.1...v2.0.2) (2020-05-21)

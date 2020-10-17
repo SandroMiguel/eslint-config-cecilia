@@ -3,4 +3,6 @@
 // https://eslint.org/docs/rules/arrow-parens
 
 /* eslint-disable no-unused-vars */
-const foo = (bar) => {}
+/* eslint-disable no-undef */
+/* eslint-disable no-shadow */
+const foo = bar => {}

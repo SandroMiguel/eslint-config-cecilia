@@ -17,8 +17,7 @@ The goal of the ESLint config Cecilia is to keep the code clean and consistent
 using [Prettier](https://www.npmjs.com/package/prettier) and
 [ESLint](https://eslint.org/).
 
-ESLint config Cecilia rules are based on
-[eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
+ESLint config Cecilia rules are based on [Prettier](https://www.npmjs.com/package/prettier) and [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
 ## Table of Contents
 

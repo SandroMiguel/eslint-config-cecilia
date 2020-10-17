@@ -19,7 +19,7 @@ module.exports = {
     'jsdoc/require-description-complete-sentence': 'warn',
 
     // Requires that all functions have examples
-    'jsdoc/require-example': 'warn',
+    'jsdoc/require-example': 'off',
 
     // Requires a hyphen before the @param description
     'jsdoc/require-hyphen-before-param-description': 'warn',
