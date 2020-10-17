@@ -5,6 +5,4 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable no-shadow */
-const foo = (bar) => {}
-const baz = bar => {}
-a.then(foo => {});
+const foo = bar => {}
