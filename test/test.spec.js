@@ -27,6 +27,16 @@ expect.extend({
   },
 })
 
+test('jsdoc/require-example rule', async () => {
+  const ruleId = 'jsdoc/require-example'
+  const result = await fetchTestFiles(ruleId)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).toBe(
+    undefined,
+    messages[0] && messages[0].message,
+  )
+})
+
 test('react-hooks/exhaustive-deps rule', async () => {
   const ruleId = 'react-hooks/exhaustive-deps'
   const result = await fetchTestFiles(ruleId)
