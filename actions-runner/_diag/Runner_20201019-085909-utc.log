@@ -1,0 +1,499 @@
+[2020-10-19 08:59:09Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO HostContext] Well known config file 'Credentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials'
+[2020-10-19 08:59:09Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2020-10-19 08:59:09Z INFO Listener] RuntimeInformation: Linux 4.15.0-121-generic #123-Ubuntu SMP Mon Oct 5 16:16:40 UTC 2020.
+[2020-10-19 08:59:09Z INFO Listener] Version: 2.273.5
+[2020-10-19 08:59:09Z INFO Listener] Commit: a79bab4b3c993a205a2d73d2b618299d8a96bd26
+[2020-10-19 08:59:09Z INFO Listener] Culture: en-US
+[2020-10-19 08:59:09Z INFO Listener] UI Culture: en-US
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO Listener] Validating directory permissions for: '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO CommandLineParser] Parse
+[2020-10-19 08:59:09Z INFO CommandLineParser] Parsing 1 args
+[2020-10-19 08:59:09Z INFO CommandLineParser] parsing argument
+[2020-10-19 08:59:09Z INFO CommandLineParser] HasArgs: False
+[2020-10-19 08:59:09Z INFO CommandLineParser] Adding Command: run
+[2020-10-19 08:59:09Z INFO Listener] Arguments parsed
+[2020-10-19 08:59:09Z INFO Runner] ExecuteCommand
+[2020-10-19 08:59:09Z INFO ConfigurationStore] currentAssemblyLocation: /home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Listener.dll
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO ConfigurationStore] binPath: /home/sandro/web/eslint-config-cecilia/actions-runner/bin
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO ConfigurationStore] RootFolder: /home/sandro/web/eslint-config-cecilia/actions-runner
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO HostContext] Well known config file 'Runner': '/home/sandro/web/eslint-config-cecilia/actions-runner/.runner'
+[2020-10-19 08:59:09Z INFO ConfigurationStore] ConfigFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.runner
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO HostContext] Well known config file 'Credentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials'
+[2020-10-19 08:59:09Z INFO ConfigurationStore] CredFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_migrated'
+[2020-10-19 08:59:09Z INFO ConfigurationStore] MigratedCredFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_migrated
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO HostContext] Well known config file 'Service': '/home/sandro/web/eslint-config-cecilia/actions-runner/.service'
+[2020-10-19 08:59:09Z INFO ConfigurationStore] ServiceConfigFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.service
+[2020-10-19 08:59:09Z INFO CommandSettings] Flag 'help': 'False'
+[2020-10-19 08:59:09Z INFO CommandSettings] Flag 'version': 'False'
+[2020-10-19 08:59:09Z INFO CommandSettings] Flag 'commit': 'False'
+[2020-10-19 08:59:09Z INFO CommandSettings] Command 'configure': 'False'
+[2020-10-19 08:59:09Z INFO CommandSettings] Command 'remove': 'False'
+[2020-10-19 08:59:09Z INFO CommandSettings] Command 'warmup': 'False'
+[2020-10-19 08:59:09Z INFO ConfigurationManager] LoadSettings
+[2020-10-19 08:59:09Z INFO ConfigurationStore] IsConfigured()
+[2020-10-19 08:59:09Z INFO ConfigurationStore] IsConfigured: True
+[2020-10-19 08:59:09Z INFO ConfigurationManager] Is configured: True
+[2020-10-19 08:59:09Z INFO ConfigurationStore] Read setting file: 319 chars
+[2020-10-19 08:59:09Z INFO ConfigurationManager] Settings Loaded
+[2020-10-19 08:59:09Z INFO ConfigurationStore] IsServiceConfigured()
+[2020-10-19 08:59:09Z INFO ConfigurationStore] IsServiceConfigured: False
+[2020-10-19 08:59:09Z INFO CommandSettings] Command 'run': 'True'
+[2020-10-19 08:59:09Z INFO ConfigurationStore] IsConfigured()
+[2020-10-19 08:59:09Z INFO ConfigurationStore] IsConfigured: True
+[2020-10-19 08:59:09Z INFO ConfigurationManager] Is configured: True
+[2020-10-19 08:59:09Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2020-10-19 08:59:09Z INFO Runner] Set runner startup type - Manual
+[2020-10-19 08:59:09Z INFO CommandSettings] Flag 'once': 'False'
+[2020-10-19 08:59:09Z INFO Runner] RunAsync
+[2020-10-19 08:59:09Z INFO ConfigurationManager] LoadSettings
+[2020-10-19 08:59:09Z INFO ConfigurationStore] IsConfigured()
+[2020-10-19 08:59:09Z INFO ConfigurationStore] IsConfigured: True
+[2020-10-19 08:59:09Z INFO ConfigurationManager] Is configured: True
+[2020-10-19 08:59:09Z INFO ConfigurationManager] Settings Loaded
+[2020-10-19 08:59:09Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "eslint-config-cecilia-runner",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/EZV3yuNtJkiMfuogBJg9msYAltt52ZBsMeEhGFYGv6nqRlc8aU",
+  "GitHubUrl": "https://github.com/SandroMiguel/eslint-config-cecilia",
+  "WorkFolder": "_work"
+}
+[2020-10-19 08:59:09Z INFO MessageListener] Loading Credentials
+[2020-10-19 08:59:09Z INFO ConfigurationStore] HasCredentials()
+[2020-10-19 08:59:09Z INFO ConfigurationStore] stored True
+[2020-10-19 08:59:09Z INFO CredentialManager] GetCredentialProvider
+[2020-10-19 08:59:09Z INFO CredentialManager] Creating type OAuth
+[2020-10-19 08:59:09Z INFO CredentialManager] Creating credential type: OAuth
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:09Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:59:09Z INFO HostContext] Well known config file 'RSACredentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams'
+[2020-10-19 08:59:09Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:59:09Z INFO MessageListener] Attempt to create session.
+[2020-10-19 08:59:09Z INFO MessageListener] Connecting to the Runner Server...
+[2020-10-19 08:59:09Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2020-10-19 08:59:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:59:09Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-10-19 08:59:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:59:09Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-10-19 08:59:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:59:10Z INFO MessageListener] VssConnection created
+[2020-10-19 08:59:10Z INFO Terminal] WRITE LINE: 
+[2020-10-19 08:59:10Z INFO Terminal] WRITE LINE: 
+[2020-10-19 08:59:10Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 5f036878-e915-4dc9-a66e-ce565af25967
+ActivityId: 6a167c0a-76ba-4d54-ae1d-7a8a7e0ac2af
+X-TFS-Session: 9ed55777-7b36-446f-a91a-58d4e3fdc19b
+X-VSS-E2EID: 253ae352-7ae9-4c5a-9dfe-bfcca4ee9e80
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 82E11F0032FD4309AAD435A64E39F444 Ref B: LIS01EDGE0308 Ref C: 2020-10-19T08:58:16Z
+Date: Mon, 19 Oct 2020 08:58:15 GMT
+
+[2020-10-19 08:59:10Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:59:10Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:59:11Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-10-19 08:59:11Z INFO MessageListener] Session created.
+[2020-10-19 08:59:11Z INFO Terminal] WRITE LINE: 2020-10-19 08:59:11Z: Listening for Jobs
+[2020-10-19 08:59:11Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2020-10-19 08:59:52Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:59:52Z INFO MessageListener] Message '1' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 08:59:52Z INFO JobDispatcher] Job request 1 for plan 7f830a09-b4a9-4e18-bde5-a144978c2538 job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 received.
+[2020-10-19 08:59:52Z INFO JobDispatcher] Pull OrchestrationId 7f830a09-b4a9-4e18-bde5-a144978c2538.build._14_x from JWT claims
+[2020-10-19 08:59:52Z INFO Terminal] WRITE LINE: 2020-10-19 08:59:52Z: Running job: build (14.x)
+[2020-10-19 08:59:52Z INFO JobDispatcher] Start renew job request 1 for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 08:59:52Z INFO JobDispatcher] Successfully renew job request 1, job is valid till 10/19/2020 9:08:58 AM
+[2020-10-19 08:59:52Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 100 103'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 08:59:52Z INFO ProcessInvokerWrapper] Process started with process id 9900, waiting for process exit.
+[2020-10-19 08:59:52Z INFO JobDispatcher] Send job request message to worker for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 08:59:53Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 08:59:53Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:00:06Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:00:06Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:00:06Z INFO ProcessInvokerWrapper] Finished process 9900 with exit code 102, and elapsed time 00:00:13.1222527.
+[2020-10-19 09:00:06Z INFO JobDispatcher] Worker finished for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4. Code: 102
+[2020-10-19 09:00:06Z INFO JobDispatcher] finish job request for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 with result: Failed
+[2020-10-19 09:00:06Z INFO Terminal] WRITE LINE: 2020-10-19 09:00:06Z: Job build (14.x) completed with result: Failed
+[2020-10-19 09:00:06Z INFO JobDispatcher] Stop renew job request for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:00:06Z INFO JobDispatcher] job renew has been canceled, stop renew job request 1.
+[2020-10-19 09:00:06Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:00:06Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:00:08Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:00:08Z INFO MessageListener] Message '2' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:00:08Z INFO JobDispatcher] Job request 2 for plan 7f830a09-b4a9-4e18-bde5-a144978c2538 job 1688b4be-3760-56c4-0657-72178d884855 received.
+[2020-10-19 09:00:08Z INFO JobDispatcher] Pull OrchestrationId 7f830a09-b4a9-4e18-bde5-a144978c2538.build._10_x from JWT claims
+[2020-10-19 09:00:08Z INFO JobDispatcher] Job request 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 processed succeed.
+[2020-10-19 09:00:08Z INFO Terminal] WRITE LINE: 2020-10-19 09:00:08Z: Running job: build (10.x)
+[2020-10-19 09:00:08Z INFO JobDispatcher] Start renew job request 2 for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:00:08Z INFO JobDispatcher] Successfully renew job request 2, job is valid till 10/19/2020 9:09:14 AM
+[2020-10-19 09:00:08Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 100 103'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:00:08Z INFO ProcessInvokerWrapper] Process started with process id 10028, waiting for process exit.
+[2020-10-19 09:00:08Z INFO JobDispatcher] Send job request message to worker for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:00:08Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:00:08Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:00:10Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:00:10Z INFO MessageListener] Message '3' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:00:10Z INFO JobDispatcher] Job cancellation request 1688b4be-3760-56c4-0657-72178d884855 received, cancellation timeout 5 minutes.
+[2020-10-19 09:00:10Z INFO JobDispatcher] Send job cancellation message to worker for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:00:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:00:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:00:13Z INFO ProcessInvokerWrapper] Finished process 10028 with exit code 103, and elapsed time 00:00:04.3780455.
+[2020-10-19 09:00:13Z INFO JobDispatcher] finish job request for job 1688b4be-3760-56c4-0657-72178d884855 with result: Canceled
+[2020-10-19 09:00:13Z INFO Terminal] WRITE LINE: 2020-10-19 09:00:13Z: Job build (10.x) completed with result: Canceled
+[2020-10-19 09:00:13Z INFO JobDispatcher] Stop renew job request for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:00:13Z INFO JobDispatcher] job renew has been canceled, stop renew job request 2.
+[2020-10-19 09:00:13Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:00:13Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:14:42Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:14:42Z INFO MessageListener] Message '4' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:14:42Z INFO JobDispatcher] Job request 4 for plan 2e8070cc-6a57-43c2-ab48-37298f1ab6f2 job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 received.
+[2020-10-19 09:14:42Z INFO JobDispatcher] Pull OrchestrationId 2e8070cc-6a57-43c2-ab48-37298f1ab6f2.build._14_x from JWT claims
+[2020-10-19 09:14:42Z INFO JobDispatcher] Job request 1688b4be-3760-56c4-0657-72178d884855 processed succeed.
+[2020-10-19 09:14:42Z INFO Terminal] WRITE LINE: 2020-10-19 09:14:42Z: Running job: build (14.x)
+[2020-10-19 09:14:42Z INFO JobDispatcher] Start renew job request 4 for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:14:43Z INFO JobDispatcher] Successfully renew job request 4, job is valid till 10/19/2020 9:23:48 AM
+[2020-10-19 09:14:43Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 86 102'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:14:43Z INFO ProcessInvokerWrapper] Process started with process id 11104, waiting for process exit.
+[2020-10-19 09:14:43Z INFO JobDispatcher] Send job request message to worker for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:14:43Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:14:43Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:14:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:51Z INFO ProcessInvokerWrapper] Finished process 11104 with exit code 102, and elapsed time 00:00:07.8946656.
+[2020-10-19 09:14:51Z INFO JobDispatcher] Worker finished for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4. Code: 102
+[2020-10-19 09:14:51Z INFO JobDispatcher] finish job request for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 with result: Failed
+[2020-10-19 09:14:51Z INFO Terminal] WRITE LINE: 2020-10-19 09:14:51Z: Job build (14.x) completed with result: Failed
+[2020-10-19 09:14:51Z INFO JobDispatcher] Stop renew job request for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:14:51Z INFO JobDispatcher] job renew has been canceled, stop renew job request 4.
+[2020-10-19 09:14:51Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:14:51Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:14:53Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:14:53Z INFO MessageListener] Message '5' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:14:53Z INFO JobDispatcher] Job request 5 for plan 2e8070cc-6a57-43c2-ab48-37298f1ab6f2 job a9a345e6-1106-5aaa-6fe5-f842db892828 received.
+[2020-10-19 09:14:53Z INFO JobDispatcher] Pull OrchestrationId 2e8070cc-6a57-43c2-ab48-37298f1ab6f2.build._12_x from JWT claims
+[2020-10-19 09:14:53Z INFO JobDispatcher] Job request 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 processed succeed.
+[2020-10-19 09:14:53Z INFO Terminal] WRITE LINE: 2020-10-19 09:14:53Z: Running job: build (12.x)
+[2020-10-19 09:14:53Z INFO JobDispatcher] Start renew job request 5 for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:14:54Z INFO JobDispatcher] Successfully renew job request 5, job is valid till 10/19/2020 9:23:59 AM
+[2020-10-19 09:14:54Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 86 102'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:14:54Z INFO ProcessInvokerWrapper] Process started with process id 11226, waiting for process exit.
+[2020-10-19 09:14:54Z INFO JobDispatcher] Send job request message to worker for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:14:54Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:14:54Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:14:56Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:14:56Z INFO MessageListener] Message '6' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:14:56Z INFO JobDispatcher] Job cancellation request a9a345e6-1106-5aaa-6fe5-f842db892828 received, cancellation timeout 5 minutes.
+[2020-10-19 09:14:56Z INFO JobDispatcher] Send job cancellation message to worker for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:14:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:58Z INFO ProcessInvokerWrapper] Finished process 11226 with exit code 103, and elapsed time 00:00:04.3835755.
+[2020-10-19 09:14:58Z INFO JobDispatcher] finish job request for job a9a345e6-1106-5aaa-6fe5-f842db892828 with result: Canceled
+[2020-10-19 09:14:58Z INFO Terminal] WRITE LINE: 2020-10-19 09:14:58Z: Job build (12.x) completed with result: Canceled
+[2020-10-19 09:14:58Z INFO JobDispatcher] Stop renew job request for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:14:58Z INFO JobDispatcher] job renew has been canceled, stop renew job request 5.
+[2020-10-19 09:14:58Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:14:58Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:16:32Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:16:32Z INFO MessageListener] Message '7' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:16:32Z INFO JobDispatcher] Job request 7 for plan da567b4b-f7a3-43a4-8060-b1a4ba77b26c job 1688b4be-3760-56c4-0657-72178d884855 received.
+[2020-10-19 09:16:32Z INFO JobDispatcher] Pull OrchestrationId da567b4b-f7a3-43a4-8060-b1a4ba77b26c.build._10_x from JWT claims
+[2020-10-19 09:16:32Z INFO JobDispatcher] Job request a9a345e6-1106-5aaa-6fe5-f842db892828 processed succeed.
+[2020-10-19 09:16:32Z INFO Terminal] WRITE LINE: 2020-10-19 09:16:32Z: Running job: build (10.x)
+[2020-10-19 09:16:32Z INFO JobDispatcher] Start renew job request 7 for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:16:33Z INFO JobDispatcher] Successfully renew job request 7, job is valid till 10/19/2020 9:25:38 AM
+[2020-10-19 09:16:33Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 86 102'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:16:33Z INFO ProcessInvokerWrapper] Process started with process id 11506, waiting for process exit.
+[2020-10-19 09:16:33Z INFO JobDispatcher] Send job request message to worker for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:16:33Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:16:33Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:16:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:16:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:16:44Z INFO ProcessInvokerWrapper] Finished process 11506 with exit code 102, and elapsed time 00:00:11.2723186.
+[2020-10-19 09:16:44Z INFO JobDispatcher] Worker finished for job 1688b4be-3760-56c4-0657-72178d884855. Code: 102
+[2020-10-19 09:16:44Z INFO JobDispatcher] finish job request for job 1688b4be-3760-56c4-0657-72178d884855 with result: Failed
+[2020-10-19 09:16:44Z INFO Terminal] WRITE LINE: 2020-10-19 09:16:44Z: Job build (10.x) completed with result: Failed
+[2020-10-19 09:16:44Z INFO JobDispatcher] Stop renew job request for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:16:44Z INFO JobDispatcher] job renew has been canceled, stop renew job request 7.
+[2020-10-19 09:16:44Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:16:44Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:16:47Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:16:47Z INFO MessageListener] Message '8' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:16:47Z INFO JobDispatcher] Job request 8 for plan da567b4b-f7a3-43a4-8060-b1a4ba77b26c job a9a345e6-1106-5aaa-6fe5-f842db892828 received.
+[2020-10-19 09:16:47Z INFO JobDispatcher] Pull OrchestrationId da567b4b-f7a3-43a4-8060-b1a4ba77b26c.build._12_x from JWT claims
+[2020-10-19 09:16:47Z INFO JobDispatcher] Job request 1688b4be-3760-56c4-0657-72178d884855 processed succeed.
+[2020-10-19 09:16:47Z INFO Terminal] WRITE LINE: 2020-10-19 09:16:47Z: Running job: build (12.x)
+[2020-10-19 09:16:47Z INFO JobDispatcher] Start renew job request 8 for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:16:47Z INFO JobDispatcher] Successfully renew job request 8, job is valid till 10/19/2020 9:25:53 AM
+[2020-10-19 09:16:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 100 103'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:16:47Z INFO ProcessInvokerWrapper] Process started with process id 11639, waiting for process exit.
+[2020-10-19 09:16:47Z INFO JobDispatcher] Send job request message to worker for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:16:47Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:16:47Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:16:49Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:16:49Z INFO MessageListener] Message '9' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:16:49Z INFO JobDispatcher] Job cancellation request a9a345e6-1106-5aaa-6fe5-f842db892828 received, cancellation timeout 5 minutes.
+[2020-10-19 09:16:49Z INFO JobDispatcher] Send job cancellation message to worker for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:16:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:16:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:16:52Z INFO ProcessInvokerWrapper] Finished process 11639 with exit code 103, and elapsed time 00:00:04.3134973.
+[2020-10-19 09:16:52Z INFO JobDispatcher] finish job request for job a9a345e6-1106-5aaa-6fe5-f842db892828 with result: Canceled
+[2020-10-19 09:16:52Z INFO Terminal] WRITE LINE: 2020-10-19 09:16:52Z: Job build (12.x) completed with result: Canceled
+[2020-10-19 09:16:52Z INFO JobDispatcher] Stop renew job request for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:16:52Z INFO JobDispatcher] job renew has been canceled, stop renew job request 8.
+[2020-10-19 09:16:52Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:16:52Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:24:07Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:24:07Z INFO MessageListener] Message '10' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:24:07Z INFO JobDispatcher] Job request 10 for plan 7a14781a-f533-46d8-8c2a-03e324679d77 job 1688b4be-3760-56c4-0657-72178d884855 received.
+[2020-10-19 09:24:07Z INFO JobDispatcher] Pull OrchestrationId 7a14781a-f533-46d8-8c2a-03e324679d77.build._10_x from JWT claims
+[2020-10-19 09:24:07Z INFO JobDispatcher] Job request a9a345e6-1106-5aaa-6fe5-f842db892828 processed succeed.
+[2020-10-19 09:24:07Z INFO Terminal] WRITE LINE: 2020-10-19 09:24:07Z: Running job: build (10.x)
+[2020-10-19 09:24:07Z INFO JobDispatcher] Start renew job request 10 for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:24:08Z INFO JobDispatcher] Successfully renew job request 10, job is valid till 10/19/2020 9:33:13 AM
+[2020-10-19 09:24:08Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 101 105'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:24:08Z INFO ProcessInvokerWrapper] Process started with process id 12736, waiting for process exit.
+[2020-10-19 09:24:08Z INFO JobDispatcher] Send job request message to worker for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:24:08Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:24:08Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:24:26Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:24:26Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:24:26Z INFO ProcessInvokerWrapper] Finished process 12736 with exit code 102, and elapsed time 00:00:18.8001844.
+[2020-10-19 09:24:26Z INFO JobDispatcher] Worker finished for job 1688b4be-3760-56c4-0657-72178d884855. Code: 102
+[2020-10-19 09:24:26Z INFO JobDispatcher] finish job request for job 1688b4be-3760-56c4-0657-72178d884855 with result: Failed
+[2020-10-19 09:24:26Z INFO Terminal] WRITE LINE: 2020-10-19 09:24:26Z: Job build (10.x) completed with result: Failed
+[2020-10-19 09:24:26Z INFO JobDispatcher] Stop renew job request for job 1688b4be-3760-56c4-0657-72178d884855.
+[2020-10-19 09:24:26Z INFO JobDispatcher] job renew has been canceled, stop renew job request 10.
+[2020-10-19 09:24:26Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:24:26Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:24:29Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:24:29Z INFO MessageListener] Message '11' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:24:29Z INFO JobDispatcher] Job request 11 for plan 7a14781a-f533-46d8-8c2a-03e324679d77 job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 received.
+[2020-10-19 09:24:29Z INFO JobDispatcher] Pull OrchestrationId 7a14781a-f533-46d8-8c2a-03e324679d77.build._14_x from JWT claims
+[2020-10-19 09:24:29Z INFO JobDispatcher] Job request 1688b4be-3760-56c4-0657-72178d884855 processed succeed.
+[2020-10-19 09:24:29Z INFO Terminal] WRITE LINE: 2020-10-19 09:24:29Z: Running job: build (14.x)
+[2020-10-19 09:24:29Z INFO JobDispatcher] Start renew job request 11 for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:24:29Z INFO JobDispatcher] Successfully renew job request 11, job is valid till 10/19/2020 9:33:35 AM
+[2020-10-19 09:24:29Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 101 105'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:24:29Z INFO ProcessInvokerWrapper] Process started with process id 13007, waiting for process exit.
+[2020-10-19 09:24:29Z INFO JobDispatcher] Send job request message to worker for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:24:29Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:24:29Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:24:31Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:24:31Z INFO MessageListener] Message '12' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:24:31Z INFO JobDispatcher] Job cancellation request 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 received, cancellation timeout 5 minutes.
+[2020-10-19 09:24:31Z INFO JobDispatcher] Send job cancellation message to worker for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:24:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:24:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:24:33Z INFO ProcessInvokerWrapper] Finished process 13007 with exit code 103, and elapsed time 00:00:03.8368496.
+[2020-10-19 09:24:33Z INFO JobDispatcher] finish job request for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 with result: Canceled
+[2020-10-19 09:24:33Z INFO Terminal] WRITE LINE: 2020-10-19 09:24:33Z: Job build (14.x) completed with result: Canceled
+[2020-10-19 09:24:33Z INFO JobDispatcher] Stop renew job request for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:24:33Z INFO JobDispatcher] job renew has been canceled, stop renew job request 11.
+[2020-10-19 09:24:33Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:24:33Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:26:02Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:26:02Z INFO MessageListener] Message '13' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:26:02Z INFO JobDispatcher] Job request 13 for plan 1b8f4dce-a71c-4486-8628-7082d5313df3 job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 received.
+[2020-10-19 09:26:02Z INFO JobDispatcher] Pull OrchestrationId 1b8f4dce-a71c-4486-8628-7082d5313df3.build._14_x from JWT claims
+[2020-10-19 09:26:02Z INFO JobDispatcher] Job request 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 processed succeed.
+[2020-10-19 09:26:02Z INFO Terminal] WRITE LINE: 2020-10-19 09:26:02Z: Running job: build (14.x)
+[2020-10-19 09:26:02Z INFO JobDispatcher] Start renew job request 13 for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:26:02Z INFO JobDispatcher] Successfully renew job request 13, job is valid till 10/19/2020 9:35:08 AM
+[2020-10-19 09:26:02Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 100 105'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:26:02Z INFO ProcessInvokerWrapper] Process started with process id 13366, waiting for process exit.
+[2020-10-19 09:26:02Z INFO JobDispatcher] Send job request message to worker for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:26:02Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:26:02Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:26:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:26:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:26:21Z INFO ProcessInvokerWrapper] Finished process 13366 with exit code 102, and elapsed time 00:00:18.5811142.
+[2020-10-19 09:26:21Z INFO JobDispatcher] Worker finished for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4. Code: 102
+[2020-10-19 09:26:21Z INFO JobDispatcher] finish job request for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 with result: Failed
+[2020-10-19 09:26:21Z INFO Terminal] WRITE LINE: 2020-10-19 09:26:21Z: Job build (14.x) completed with result: Failed
+[2020-10-19 09:26:21Z INFO JobDispatcher] Stop renew job request for job 006c7e6f-00a1-57ff-4d9c-5871960fc9e4.
+[2020-10-19 09:26:21Z INFO JobDispatcher] job renew has been canceled, stop renew job request 13.
+[2020-10-19 09:26:21Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:26:21Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:26:24Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:26:24Z INFO MessageListener] Message '14' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:26:24Z INFO JobDispatcher] Job request 14 for plan 1b8f4dce-a71c-4486-8628-7082d5313df3 job a9a345e6-1106-5aaa-6fe5-f842db892828 received.
+[2020-10-19 09:26:24Z INFO JobDispatcher] Pull OrchestrationId 1b8f4dce-a71c-4486-8628-7082d5313df3.build._12_x from JWT claims
+[2020-10-19 09:26:24Z INFO JobDispatcher] Job request 006c7e6f-00a1-57ff-4d9c-5871960fc9e4 processed succeed.
+[2020-10-19 09:26:24Z INFO Terminal] WRITE LINE: 2020-10-19 09:26:24Z: Running job: build (12.x)
+[2020-10-19 09:26:24Z INFO JobDispatcher] Start renew job request 14 for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:26:24Z INFO JobDispatcher] Successfully renew job request 14, job is valid till 10/19/2020 9:35:30 AM
+[2020-10-19 09:26:24Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 100 105'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-10-19 09:26:24Z INFO ProcessInvokerWrapper] Process started with process id 13669, waiting for process exit.
+[2020-10-19 09:26:24Z INFO JobDispatcher] Send job request message to worker for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:26:24Z INFO JobNotification] Entering JobStarted Notification
+[2020-10-19 09:26:24Z INFO JobNotification] Entering StartMonitor
+[2020-10-19 09:26:26Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:26:26Z INFO MessageListener] Message '15' received from session 'e813924b-3756-426c-87ad-1dd918717119'.
+[2020-10-19 09:26:26Z INFO JobDispatcher] Job cancellation request a9a345e6-1106-5aaa-6fe5-f842db892828 received, cancellation timeout 5 minutes.
+[2020-10-19 09:26:26Z INFO JobDispatcher] Send job cancellation message to worker for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:26:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:26:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:26:29Z INFO ProcessInvokerWrapper] Finished process 13669 with exit code 103, and elapsed time 00:00:05.0006376.
+[2020-10-19 09:26:29Z INFO JobDispatcher] finish job request for job a9a345e6-1106-5aaa-6fe5-f842db892828 with result: Canceled
+[2020-10-19 09:26:29Z INFO Terminal] WRITE LINE: 2020-10-19 09:26:29Z: Job build (12.x) completed with result: Canceled
+[2020-10-19 09:26:29Z INFO JobDispatcher] Stop renew job request for job a9a345e6-1106-5aaa-6fe5-f842db892828.
+[2020-10-19 09:26:29Z INFO JobDispatcher] job renew has been canceled, stop renew job request 14.
+[2020-10-19 09:26:29Z INFO JobNotification] Entering JobCompleted Notification
+[2020-10-19 09:26:29Z INFO JobNotification] Entering EndMonitor
+[2020-10-19 09:54:53Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 6a65cd11-6b19-4641-b69d-1f1ffcbfbcf6
+ActivityId: c802db5f-c36d-4b53-bb77-8c18b94a0847
+X-TFS-Session: 9ed55777-7b36-446f-a91a-58d4e3fdc19b
+X-VSS-E2EID: 43c11f15-15d7-46f5-a90e-482128ba64c9
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 440D54C535494656B2776166FF1F1699 Ref B: LIS01EDGE0308 Ref C: 2020-10-19T09:53:59Z
+Date: Mon, 19 Oct 2020 09:53:59 GMT
+
+[2020-10-19 09:54:53Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 09:54:54Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-10-19 09:56:34Z INFO MessageListener] No message retrieved from session 'e813924b-3756-426c-87ad-1dd918717119' within last 30 minutes.
+[2020-10-19 10:26:42Z INFO MessageListener] No message retrieved from session 'e813924b-3756-426c-87ad-1dd918717119' within last 30 minutes.

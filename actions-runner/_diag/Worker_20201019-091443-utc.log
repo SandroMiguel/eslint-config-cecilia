@@ -1,0 +1,2787 @@
+[2020-10-19 09:14:43Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2020-10-19 09:14:43Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:43Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:43Z INFO HostContext] Well known config file 'Credentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials'
+[2020-10-19 09:14:43Z INFO Worker] Version: 2.273.5
+[2020-10-19 09:14:43Z INFO Worker] Commit: a79bab4b3c993a205a2d73d2b618299d8a96bd26
+[2020-10-19 09:14:43Z INFO Worker] Culture: en-US
+[2020-10-19 09:14:43Z INFO Worker] UI Culture: en-US
+[2020-10-19 09:14:43Z INFO Worker] Waiting to receive the job message from the channel.
+[2020-10-19 09:14:43Z INFO Worker] Message received.
+[2020-10-19 09:14:43Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/node.js.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "condition": "success()",
+      "id": "2ad33848-49ea-50c8-ba3c-6d56baf65020",
+      "name": "actionscheckout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v1",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 3,
+        "file": 1,
+        "line": 21,
+        "col": 13,
+        "expr": "format('Use Node.js {0}', matrix.node-version)"
+      },
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 24,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 24,
+              "col": 9,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 24,
+              "col": 23,
+              "expr": "matrix.node-version"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "6e18ae3a-0002-5382-d895-85ba37ca0ed3",
+      "name": "actionssetup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 12,
+              "lit": "yarn ci"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "6df6c8b2-37e7-567b-dfd0-96a16ebefadf",
+      "name": "run1"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 26,
+              "col": 12,
+              "lit": "yarn test"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "2091dd97-b57a-59d7-148a-fbbcbde32eec",
+      "name": "run2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system": {
+      "value": "actions"
+    },
+    "system.hosttype": {
+      "value": "actions"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": "en-US"
+    },
+    "system.collectionId": {
+      "value": "6ca2c249-1c06-4da9-89ad-56eb9b034113"
+    },
+    "system.collectionUri": {
+      "value": "https://pipelines.actions.githubusercontent.com/EZV3yuNtJkiMfuogBJg9msYAltt52ZBsMeEhGFYGv6nqRlc8aU/"
+    },
+    "system.taskDefinitionsUri": {
+      "value": "https://pipelines.actions.githubusercontent.com/EZV3yuNtJkiMfuogBJg9msYAltt52ZBsMeEhGFYGv6nqRlc8aU/"
+    },
+    "system.pipelineStartTime": {
+      "value": "2020-10-19 09:13:46+00:00"
+    },
+    "system.definitionId": {
+      "value": "3"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UseContextNameForGITHUBACTION": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "3"
+    },
+    "build.containerId": {
+      "value": "956082"
+    },
+    "system.definitionName": {
+      "value": "eslint-config-cecilia"
+    },
+    "system.planId": {
+      "value": "2e8070cc-6a57-43c2-ab48-37298f1ab6f2"
+    },
+    "system.timelineId": {
+      "value": "2e8070cc-6a57-43c2-ab48-37298f1ab6f2"
+    },
+    "system.stageDisplayName": {
+      "value": "__default"
+    },
+    "system.stageId": {
+      "value": "96ac2280-8cb4-5df5-99de-dd2da759617d"
+    },
+    "system.stageName": {
+      "value": "__default"
+    },
+    "system.stageAttempt": {
+      "value": "1"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.phaseId": {
+      "value": "6884a131-87da-5381-61f3-d7acc3b91d76"
+    },
+    "system.phaseName": {
+      "value": "build"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "build._14_x"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "3"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "3"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.jobDisplayName": {
+      "value": "build (14.x)"
+    },
+    "system.jobId": {
+      "value": "006c7e6f-00a1-57ff-4d9c-5871960fc9e4"
+    },
+    "system.jobName": {
+      "value": "_14_x"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 12,
+    "planId": "2e8070cc-6a57-43c2-ab48-37298f1ab6f2",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/3",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "eslint-config-cecilia"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "SandroMiguel"
+    }
+  },
+  "timeline": {
+    "id": "2e8070cc-6a57-43c2-ab48-37298f1ab6f2",
+    "changeId": 10,
+    "location": null
+  },
+  "jobId": "006c7e6f-00a1-57ff-4d9c-5871960fc9e4",
+  "jobDisplayName": "build (14.x)",
+  "jobName": "_14_x",
+  "requestId": 4,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "6ca2c249-1c06-4da9-89ad-56eb9b034113",
+          "ServerName": "EZV3yuNtJkiMfuogBJg9msYAltt52ZBsMeEhGFYGv6nqRlc8aU",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/EZV3yuNtJkiMfuogBJg9msYAltt52ZBsMeEhGFYGv6nqRlc8aU/"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/EZV3yuNtJkiMfuogBJg9msYAltt52ZBsMeEhGFYGv6nqRlc8aU/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/master"
+        },
+        {
+          "k": "sha",
+          "v": "f9744bf1982273e0bf72f909a512b6e0289121cb"
+        },
+        {
+          "k": "repository",
+          "v": "SandroMiguel/eslint-config-cecilia"
+        },
+        {
+          "k": "repository_owner",
+          "v": "SandroMiguel"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/SandroMiguel/eslint-config-cecilia.git"
+        },
+        {
+          "k": "run_id",
+          "v": "315127524"
+        },
+        {
+          "k": "run_number",
+          "v": "2"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "actor",
+          "v": "SandroMiguel"
+        },
+        {
+          "k": "workflow",
+          "v": "Node.js CI"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "f9744bf1982273e0bf72f909a512b6e0289121cb"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "368d43abc6a59c25ff8ed7663da51c43d62e7900"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "sandromiguel@sandromiguel.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Sandro Miguel Marques"
+                              },
+                              {
+                                "k": "username",
+                                "v": "SandroMiguel"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "f9744bf1982273e0bf72f909a512b6e0289121cb"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update node.js.yml"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2020-10-19T10:13:41+01:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "f5f1e85bc07e80d925005b27d74de54444c54c7d"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/SandroMiguel/eslint-config-cecilia/commit/f9744bf1982273e0bf72f909a512b6e0289121cb"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/SandroMiguel/eslint-config-cecilia/compare/368d43abc6a5...f9744bf19822"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "sandromiguel@sandromiguel.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Sandro Miguel Marques"
+                          },
+                          {
+                            "k": "username",
+                            "v": "SandroMiguel"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "noreply@github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GitHub"
+                          },
+                          {
+                            "k": "username",
+                            "v": "web-flow"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "f9744bf1982273e0bf72f909a512b6e0289121cb"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Update node.js.yml"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2020-10-19T10:13:41+01:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "f5f1e85bc07e80d925005b27d74de54444c54c7d"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/SandroMiguel/eslint-config-cecilia/commit/f9744bf1982273e0bf72f909a512b6e0289121cb"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "sandromiguel@sandromiguel.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "SandroMiguel"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/master"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/SandroMiguel/eslint-config-cecilia.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1547564327.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "ESLint configuration for awesome projects"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "SandroMiguel/eslint-config-cecilia"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/SandroMiguel/eslint-config-cecilia.git"
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": "https://www.npmjs.com/package/eslint-config-cecilia"
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/SandroMiguel/eslint-config-cecilia"
+                    },
+                    {
+                      "k": "id",
+                      "v": 165870113.0
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "mit"
+                          },
+                          {
+                            "k": "name",
+                            "v": "MIT License"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTEz"
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "MIT"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/mit"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "eslint-config-cecilia"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDEwOlJlcG9zaXRvcnkxNjU4NzAxMTM="
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars0.githubusercontent.com/u/6423157?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "sandromiguel@sandromiguel.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/SandroMiguel/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/SandroMiguel/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/SandroMiguel/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/SandroMiguel/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/SandroMiguel"
+                          },
+                          {
+                            "k": "id",
+                            "v": 6423157.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "SandroMiguel"
+                          },
+                          {
+                            "k": "name",
+                            "v": "SandroMiguel"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjY0MjMxNTc="
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/SandroMiguel/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/SandroMiguel/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/SandroMiguel/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/SandroMiguel/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/SandroMiguel/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/SandroMiguel"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1603098822.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 559.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:SandroMiguel/eslint-config-cecilia.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 5.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 5.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/SandroMiguel/eslint-config-cecilia"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/teams"
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/SandroMiguel/eslint-config-cecilia/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2020-10-19T08:40:40Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/SandroMiguel/eslint-config-cecilia"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 5.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 5.0
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars0.githubusercontent.com/u/6423157?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/SandroMiguel/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/SandroMiguel/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/SandroMiguel/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/SandroMiguel/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/SandroMiguel"
+                    },
+                    {
+                      "k": "id",
+                      "v": 6423157.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "SandroMiguel"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjY0MjMxNTc="
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/SandroMiguel/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/SandroMiguel/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/SandroMiguel/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/SandroMiguel/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/SandroMiguel/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/SandroMiguel"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        }
+      ]
+    },
+    "needs": {
+      "t": 2
+    },
+    "matrix": {
+      "t": 2,
+      "d": [
+        {
+          "k": "node-version",
+          "v": "14.x"
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 2.0
+        },
+        {
+          "k": "job-total",
+          "v": 3.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 3.0
+        }
+      ]
+    }
+  }
+}
+[2020-10-19 09:14:43Z INFO JobRunner] Job ID 006c7e6f-00a1-57ff-4d9c-5871960fc9e4
+[2020-10-19 09:14:43Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/EZV3yuNtJkiMfuogBJg9msYAltt52ZBsMeEhGFYGv6nqRlc8aU/
+[2020-10-19 09:14:43Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 09:14:43Z INFO Worker] Listening for cancel message from the channel.
+[2020-10-19 09:14:43Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2020-10-19 09:14:44Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 09:14:44Z INFO JobServerQueue] Start process web console line queue.
+[2020-10-19 09:14:44Z INFO JobServerQueue] Start process file upload queue.
+[2020-10-19 09:14:44Z INFO JobServerQueue] Start process timeline update queue.
+[2020-10-19 09:14:44Z INFO ExecutionContext] Initialize GitHub context
+[2020-10-19 09:14:44Z INFO ExecutionContext] Initialize Env context
+[2020-10-19 09:14:44Z INFO ConfigurationStore] currentAssemblyLocation: /home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Worker.dll
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO ConfigurationStore] binPath: /home/sandro/web/eslint-config-cecilia/actions-runner/bin
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO ConfigurationStore] RootFolder: /home/sandro/web/eslint-config-cecilia/actions-runner
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known config file 'Runner': '/home/sandro/web/eslint-config-cecilia/actions-runner/.runner'
+[2020-10-19 09:14:44Z INFO ConfigurationStore] ConfigFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.runner
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known config file 'Credentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials'
+[2020-10-19 09:14:44Z INFO ConfigurationStore] CredFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_migrated'
+[2020-10-19 09:14:44Z INFO ConfigurationStore] MigratedCredFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_migrated
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known config file 'Service': '/home/sandro/web/eslint-config-cecilia/actions-runner/.service'
+[2020-10-19 09:14:44Z INFO ConfigurationStore] ServiceConfigFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.service
+[2020-10-19 09:14:44Z INFO ConfigurationStore] Read setting file: 319 chars
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Diag': '/home/sandro/web/eslint-config-cecilia/actions-runner/_diag'
+[2020-10-19 09:14:44Z INFO JobRunner] Starting the job execution context.
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO JobRunner] Validating directory permissions for: '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Tools': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_tool'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:44Z INFO JobRunner] Getting job extension.
+[2020-10-19 09:14:44Z INFO JobRunner] Initialize job. Getting all job steps.
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Diag': '/home/sandro/web/eslint-config-cecilia/actions-runner/_diag'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known config file 'Credentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known config file 'SetupInfo': '/home/sandro/web/eslint-config-cecilia/actions-runner/.setup_info'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO PipelineDirectoryManager] Loading tracking config if exists: /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_PipelineMapping/SandroMiguel/eslint-config-cecilia/PipelineFolder.json
+[2020-10-19 09:14:44Z INFO PipelineDirectoryManager] Updating job run properties.
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO JobExtension] Downloading actions
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:44Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:44Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/a81bbbf8298c0fa03ea29cdc473d45769f953675' into /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/_temp_24c66735-579c-4053-99bf-4db4bb2a5724/41a22739-ea5d-43ae-94e8-3bbcec78fbeb.tar.gz.
+[2020-10-19 09:14:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2e4e8a5a-2fae-4922-a919-0d13a5fc92c2', success rate: 1/1.
+[2020-10-19 09:14:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2e4e8a5a-2fae-4922-a919-0d13a5fc92c2', success rate: 1/1.
+[2020-10-19 09:14:45Z INFO ActionManager] Which: 'tar'
+[2020-10-19 09:14:45Z INFO ActionManager] Location: '/bin/tar'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   File name: '/bin/tar'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/_temp_24c66735-579c-4053-99bf-4db4bb2a5724/41a22739-ea5d-43ae-94e8-3bbcec78fbeb.tar.gz"'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/_temp_24c66735-579c-4053-99bf-4db4bb2a5724/_staging'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 11126.
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper] Process started with process id 11126, waiting for process exit.
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:45Z INFO ProcessInvokerWrapper] Finished process 11126 with exit code 0, and elapsed time 00:00:00.0131518.
+[2020-10-19 09:14:45Z INFO ActionManager] Finished getting action repository.
+[2020-10-19 09:14:45Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:45Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:45Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:45Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:45Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:45Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:45Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:45Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:45Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/setup-node/tarball/56899e050abffc08c2b3b61f3ec6a79a9dc3223d' into /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/_temp_7c35ae24-560e-48af-b9c2-97025eabfbf8/dbb69f66-960f-47a3-a8db-357f1744e7f1.tar.gz.
+[2020-10-19 09:14:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2e4e8a5a-2fae-4922-a919-0d13a5fc92c2', success rate: 1/1.
+[2020-10-19 09:14:46Z INFO ActionManager] Which: 'tar'
+[2020-10-19 09:14:46Z INFO ActionManager] Location: '/bin/tar'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   File name: '/bin/tar'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/_temp_7c35ae24-560e-48af-b9c2-97025eabfbf8/dbb69f66-960f-47a3-a8db-357f1744e7f1.tar.gz"'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/_temp_7c35ae24-560e-48af-b9c2-97025eabfbf8/_staging'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 11133.
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] Process started with process id 11133, waiting for process exit.
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] Finished process 11133 with exit code 0, and elapsed time 00:00:00.0149970.
+[2020-10-19 09:14:46Z INFO ActionManager] Finished getting action repository.
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "outputs-attributes",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node12-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "step-env"
+]
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2020-10-19 09:14:46Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManager] Load action that reference repository from '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/actions/checkout/v2'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2020-10-19 09:14:46Z INFO ActionManager] Action pre node.js file: N/A.
+[2020-10-19 09:14:46Z INFO ActionManager] Action node.js file: dist/index.js.
+[2020-10-19 09:14:46Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Ignore action property author.
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment and add it to the PATH, additionally providing proxy support",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 14,
+          "lit": "10.x"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": null,
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2020-10-19 09:14:46Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManager] Load action that reference repository from '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/actions/setup-node/v1'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Ignore action property author.
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment and add it to the PATH, additionally providing proxy support",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 14,
+          "lit": "10.x"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": null,
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2020-10-19 09:14:46Z INFO ActionManager] Action pre node.js file: N/A.
+[2020-10-19 09:14:46Z INFO ActionManager] Action node.js file: dist/index.js.
+[2020-10-19 09:14:46Z INFO ActionManager] Action post node.js file: N/A.
+[2020-10-19 09:14:46Z INFO JobExtension] Adding .
+[2020-10-19 09:14:46Z INFO JobExtension] Adding .
+[2020-10-19 09:14:46Z INFO JobExtension] Adding .
+[2020-10-19 09:14:46Z INFO JobExtension] Adding .
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Diag': '/home/sandro/web/eslint-config-cecilia/actions-runner/_diag'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Diag': '/home/sandro/web/eslint-config-cecilia/actions-runner/_diag'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Diag': '/home/sandro/web/eslint-config-cecilia/actions-runner/_diag'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Diag': '/home/sandro/web/eslint-config-cecilia/actions-runner/_diag'
+[2020-10-19 09:14:46Z INFO JobExtension] Total accessible running process: 483.
+[2020-10-19 09:14:46Z INFO JobRunner] Total job steps: 4.
+[2020-10-19 09:14:46Z INFO JobRunner] Run all job steps.
+[2020-10-19 09:14:46Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2020-10-19 09:14:46Z INFO StepsRunner] Initialize Env context for step
+[2020-10-19 09:14:46Z INFO StepsRunner] Evaluating: success()
+[2020-10-19 09:14:46Z INFO StepsRunner] Result: true
+[2020-10-19 09:14:46Z INFO StepsRunner] Starting the step.
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManager] Load action that reference repository from '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/actions/checkout/v2'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2020-10-19 09:14:46Z INFO ActionManager] Action pre node.js file: N/A.
+[2020-10-19 09:14:46Z INFO ActionManager] Action node.js file: dist/index.js.
+[2020-10-19 09:14:46Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2020-10-19 09:14:46Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Diag': '/home/sandro/web/eslint-config-cecilia/actions-runner/_diag'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:46Z INFO ActionRunner] Write event payload to /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp/_github_workflow/event.json
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "SandroMiguel/eslint-config-cecilia"
+}
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2020-10-19 09:14:46Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2020-10-19 09:14:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command set-env
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command set-output
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command save-state
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command add-path
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command warning
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command error
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command debug
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command group
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2020-10-19 09:14:46Z INFO ActionCommandManager] Register action command extension for command echo
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:46Z INFO HostContext] Well known directory 'Externals': '/home/sandro/web/eslint-config-cecilia/actions-runner/externals'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/externals/node12/bin/node'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Arguments: '"/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/actions/checkout/v2/dist/index.js"'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/eslint-config-cecilia/eslint-config-cecilia'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 11136.
+[2020-10-19 09:14:46Z INFO ProcessInvokerWrapper] Process started with process id 11136, waiting for process exit.
+[2020-10-19 09:14:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2ad33848-49ea-50c8-ba3c-6d56baf65020', success rate: 1/1.
+[2020-10-19 09:14:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2ad33848-49ea-50c8-ba3c-6d56baf65020', success rate: 1/1.
+[2020-10-19 09:14:47Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] Finished process 11136 with exit code 0, and elapsed time 00:00:00.9891529.
+[2020-10-19 09:14:47Z INFO StepsRunner] Step result: 
+[2020-10-19 09:14:47Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2020-10-19 09:14:47Z INFO StepsRunner] Current state: job state = ''
+[2020-10-19 09:14:47Z INFO StepsRunner] Processing step: DisplayName='Use Node.js 14.x'
+[2020-10-19 09:14:47Z INFO StepsRunner] Initialize Env context for step
+[2020-10-19 09:14:47Z INFO StepsRunner] Evaluating: success()
+[2020-10-19 09:14:47Z INFO StepsRunner] Result: true
+[2020-10-19 09:14:47Z INFO StepsRunner] Starting the step.
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:47Z INFO ActionManager] Load action that reference repository from '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/actions/setup-node/v1'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:47Z INFO ActionManifestManager] Ignore action property author.
+[2020-10-19 09:14:47Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment and add it to the PATH, additionally providing proxy support",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 14,
+          "lit": "10.x"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": null,
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2020-10-19 09:14:47Z INFO ActionManager] Action pre node.js file: N/A.
+[2020-10-19 09:14:47Z INFO ActionManager] Action node.js file: dist/index.js.
+[2020-10-19 09:14:47Z INFO ActionManager] Action post node.js file: N/A.
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:47Z INFO ActionRunner] Write event payload to /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp/_github_workflow/event.json
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2020-10-19 09:14:47Z INFO ActionManifestManager] Input 'always-auth': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 7,
+  "col": 14,
+  "lit": "false"
+}
+[2020-10-19 09:14:47Z INFO ActionManifestManager] Input 'registry-url': default value evaluate result: ""
+[2020-10-19 09:14:47Z INFO ActionManifestManager] Input 'scope': default value evaluate result: ""
+[2020-10-19 09:14:47Z INFO ActionManifestManager] Input 'version': default value evaluate result: ""
+[2020-10-19 09:14:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command set-env
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command set-output
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command save-state
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command add-path
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command warning
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command error
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command debug
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command group
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command echo
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Externals': '/home/sandro/web/eslint-config-cecilia/actions-runner/externals'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/externals/node12/bin/node'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Arguments: '"/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/actions/setup-node/v1/dist/index.js"'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/eslint-config-cecilia/eslint-config-cecilia'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 11158.
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] Process started with process id 11158, waiting for process exit.
+[2020-10-19 09:14:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2ad33848-49ea-50c8-ba3c-6d56baf65020', success rate: 1/1.
+[2020-10-19 09:14:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e18ae3a-0002-5382-d895-85ba37ca0ed3', success rate: 1/1.
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] Finished process 11158 with exit code 0, and elapsed time 00:00:00.2320137.
+[2020-10-19 09:14:47Z INFO StepsRunner] Step result: 
+[2020-10-19 09:14:47Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2020-10-19 09:14:47Z INFO StepsRunner] Current state: job state = ''
+[2020-10-19 09:14:47Z INFO StepsRunner] Processing step: DisplayName='Run yarn ci'
+[2020-10-19 09:14:47Z INFO StepsRunner] Initialize Env context for step
+[2020-10-19 09:14:47Z INFO StepsRunner] Evaluating: success()
+[2020-10-19 09:14:47Z INFO StepsRunner] Result: true
+[2020-10-19 09:14:47Z INFO StepsRunner] Starting the step.
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:47Z INFO ActionRunner] Write event payload to /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp/_github_workflow/event.json
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2020-10-19 09:14:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command set-env
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command set-output
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command save-state
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command add-path
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command warning
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command error
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command debug
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command group
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2020-10-19 09:14:47Z INFO ActionCommandManager] Register action command extension for command echo
+[2020-10-19 09:14:47Z INFO ScriptHandler] Which: 'bash'
+[2020-10-19 09:14:47Z INFO ScriptHandler] Location: '/bin/bash'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:47Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:47Z INFO ScriptHandler] Which: 'bash'
+[2020-10-19 09:14:47Z INFO ScriptHandler] Location: '/bin/bash'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   File name: '/bin/bash'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Arguments: '-e /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp/995e70f4-8709-4587-bc36-5e51e33f1f81.sh'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/eslint-config-cecilia/eslint-config-cecilia'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 11177.
+[2020-10-19 09:14:47Z INFO ProcessInvokerWrapper] Process started with process id 11177, waiting for process exit.
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] Finished process 11177 with exit code 1, and elapsed time 00:00:00.3220337.
+[2020-10-19 09:14:48Z INFO StepsRunner] Step result: Failed
+[2020-10-19 09:14:48Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2020-10-19 09:14:48Z INFO StepsRunner] Current state: job state = 'Failed'
+[2020-10-19 09:14:48Z INFO StepsRunner] Processing step: DisplayName='Run yarn test'
+[2020-10-19 09:14:48Z INFO StepsRunner] Initialize Env context for step
+[2020-10-19 09:14:48Z INFO StepsRunner] Evaluating: success()
+[2020-10-19 09:14:48Z INFO StepsRunner] Result: false
+[2020-10-19 09:14:48Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2020-10-19 09:14:48Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2020-10-19 09:14:48Z INFO StepsRunner] Current state: job state = 'Failed'
+[2020-10-19 09:14:48Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v2'
+[2020-10-19 09:14:48Z INFO StepsRunner] Initialize Env context for step
+[2020-10-19 09:14:48Z INFO StepsRunner] Evaluating: always()
+[2020-10-19 09:14:48Z INFO StepsRunner] Result: true
+[2020-10-19 09:14:48Z INFO StepsRunner] Starting the step.
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:48Z INFO ActionManager] Load action that reference repository from '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/actions/checkout/v2'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Actions': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions'
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2020-10-19 09:14:48Z INFO ActionManager] Action pre node.js file: N/A.
+[2020-10-19 09:14:48Z INFO ActionManager] Action node.js file: dist/index.js.
+[2020-10-19 09:14:48Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:48Z INFO ActionRunner] Write event payload to /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp/_github_workflow/event.json
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Work': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Temp': '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp'
+[2020-10-19 09:14:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "SandroMiguel/eslint-config-cecilia"
+}
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2020-10-19 09:14:48Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2020-10-19 09:14:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command set-env
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command set-output
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command save-state
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command add-path
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2020-10-19 09:14:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e18ae3a-0002-5382-d895-85ba37ca0ed3', success rate: 1/1.
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command warning
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command error
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command debug
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command group
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2020-10-19 09:14:48Z INFO ActionCommandManager] Register action command extension for command echo
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Externals': '/home/sandro/web/eslint-config-cecilia/actions-runner/externals'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   File name: '/home/sandro/web/eslint-config-cecilia/actions-runner/externals/node12/bin/node'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   Arguments: '"/home/sandro/web/eslint-config-cecilia/actions-runner/_work/_actions/actions/checkout/v2/dist/index.js"'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner/_work/eslint-config-cecilia/eslint-config-cecilia'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 11199.
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] Process started with process id 11199, waiting for process exit.
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 09:14:48Z INFO ProcessInvokerWrapper] Finished process 11199 with exit code 0, and elapsed time 00:00:00.0887325.
+[2020-10-19 09:14:48Z INFO StepsRunner] Step result: 
+[2020-10-19 09:14:48Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2020-10-19 09:14:48Z INFO StepsRunner] Current state: job state = 'Failed'
+[2020-10-19 09:14:48Z INFO JobRunner] Finalize job.
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 09:14:48Z INFO HostContext] Well known directory 'Diag': '/home/sandro/web/eslint-config-cecilia/actions-runner/_diag'
+[2020-10-19 09:14:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6df6c8b2-37e7-567b-dfd0-96a16ebefadf', success rate: 1/1.
+[2020-10-19 09:14:48Z INFO JobExtension] Total accessible running process: 483.
+[2020-10-19 09:14:48Z INFO JobRunner] Job result after all job steps finish: Failed
+[2020-10-19 09:14:48Z INFO JobRunner] Completing the job execution context.
+[2020-10-19 09:14:48Z INFO JobRunner] Shutting down the job server queue.
+[2020-10-19 09:14:48Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2020-10-19 09:14:48Z INFO JobServerQueue] All queue process task stopped.
+[2020-10-19 09:14:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6df6c8b2-37e7-567b-dfd0-96a16ebefadf', success rate: 1/1.
+[2020-10-19 09:14:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a7d5480b-446d-4f8c-a273-fee80b85140d', success rate: 1/1.
+[2020-10-19 09:14:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '018cec52-8b6a-455e-b8d1-ce807f05dadf', success rate: 1/1.
+[2020-10-19 09:14:49Z INFO JobServerQueue] Web console line queue drained.
+[2020-10-19 09:14:49Z INFO JobServerQueue] Uploading 6 files in one shot.
+[2020-10-19 09:14:50Z INFO JobServerQueue] Try to upload 6 log files or attachments, success rate: 6/6.
+[2020-10-19 09:14:50Z INFO JobServerQueue] File upload queue drained.
+[2020-10-19 09:14:51Z INFO JobServerQueue] Timeline update queue drained.
+[2020-10-19 09:14:51Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2020-10-19 09:14:51Z INFO TempDirectoryManager] Cleaning runner temp folder: /home/sandro/web/eslint-config-cecilia/actions-runner/_work/_temp
+[2020-10-19 09:14:51Z INFO JobRunner] Raising job completed event.
+[2020-10-19 09:14:51Z INFO Worker] Job completed.

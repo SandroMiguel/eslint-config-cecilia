@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "SandroMiguel/eslint-config-cecilia",
+  "pipelineDirectory": "eslint-config-cecilia",
+  "workspaceDirectory": "eslint-config-cecilia/eslint-config-cecilia",
+  "repositories": {
+    "SandroMiguel/eslint-config-cecilia": {
+      "repositoryPath": "eslint-config-cecilia/eslint-config-cecilia",
+      "lastRunOn": "10/19/2020 09:59:54 +01:00"
+    }
+  },
+  "lastRunOn": "10/19/2020 10:26:25 +01:00"
+}

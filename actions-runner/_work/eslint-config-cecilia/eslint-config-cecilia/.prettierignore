@@ -1,0 +1,2 @@
+# Do not run Prettier against files inside "fixtures/" folder
+test/fixtures/*

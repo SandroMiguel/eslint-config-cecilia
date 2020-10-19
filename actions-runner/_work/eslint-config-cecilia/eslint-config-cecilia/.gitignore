@@ -1,0 +1,19 @@
+## Editor directory
+**/.vscode
+
+## Ignore NPM 'node_modules' directory
+**/node_modules
+
+## Ignore log files
+**/log
+yarn-error.log*
+
+## Ignore generated source maps
+*.map
+
+## Other files to ignore (e.g. credentials)
+.env
+.npmrc
+**/*.bak
+**/storage
+**/.misc

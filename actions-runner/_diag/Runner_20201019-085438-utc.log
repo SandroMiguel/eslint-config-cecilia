@@ -1,0 +1,218 @@
+[2020-10-19 08:54:38Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:38Z INFO HostContext] Well known config file 'Credentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials'
+[2020-10-19 08:54:38Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2020-10-19 08:54:38Z INFO Listener] RuntimeInformation: Linux 4.15.0-121-generic #123-Ubuntu SMP Mon Oct 5 16:16:40 UTC 2020.
+[2020-10-19 08:54:38Z INFO Listener] Version: 2.273.5
+[2020-10-19 08:54:38Z INFO Listener] Commit: a79bab4b3c993a205a2d73d2b618299d8a96bd26
+[2020-10-19 08:54:38Z INFO Listener] Culture: en-US
+[2020-10-19 08:54:38Z INFO Listener] UI Culture: en-US
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:38Z INFO Listener] Validating directory permissions for: '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:38Z INFO CommandLineParser] Parse
+[2020-10-19 08:54:38Z INFO CommandLineParser] Parsing 5 args
+[2020-10-19 08:54:38Z INFO CommandLineParser] parsing argument
+[2020-10-19 08:54:38Z INFO CommandLineParser] HasArgs: False
+[2020-10-19 08:54:38Z INFO CommandLineParser] Adding Command: configure
+[2020-10-19 08:54:38Z INFO CommandLineParser] parsing argument
+[2020-10-19 08:54:38Z INFO CommandLineParser] HasArgs: True
+[2020-10-19 08:54:38Z INFO CommandLineParser] arg: url
+[2020-10-19 08:54:38Z INFO CommandLineParser] parsing argument
+[2020-10-19 08:54:38Z INFO CommandLineParser] HasArgs: True
+[2020-10-19 08:54:38Z INFO CommandLineParser] Adding option 'url': 'https://github.com/SandroMiguel/eslint-config-cecilia'
+[2020-10-19 08:54:38Z INFO CommandLineParser] parsing argument
+[2020-10-19 08:54:38Z INFO CommandLineParser] HasArgs: True
+[2020-10-19 08:54:38Z INFO CommandLineParser] arg: token
+[2020-10-19 08:54:38Z INFO CommandLineParser] parsing argument
+[2020-10-19 08:54:38Z INFO CommandLineParser] HasArgs: True
+[2020-10-19 08:54:38Z INFO CommandLineParser] Adding option 'token': '***'
+[2020-10-19 08:54:38Z INFO Listener] Arguments parsed
+[2020-10-19 08:54:38Z INFO Runner] ExecuteCommand
+[2020-10-19 08:54:38Z INFO ConfigurationStore] currentAssemblyLocation: /home/sandro/web/eslint-config-cecilia/actions-runner/bin/Runner.Listener.dll
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:38Z INFO ConfigurationStore] binPath: /home/sandro/web/eslint-config-cecilia/actions-runner/bin
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:38Z INFO ConfigurationStore] RootFolder: /home/sandro/web/eslint-config-cecilia/actions-runner
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:38Z INFO HostContext] Well known config file 'Runner': '/home/sandro/web/eslint-config-cecilia/actions-runner/.runner'
+[2020-10-19 08:54:38Z INFO ConfigurationStore] ConfigFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.runner
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:38Z INFO HostContext] Well known config file 'Credentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials'
+[2020-10-19 08:54:38Z INFO ConfigurationStore] CredFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:38Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_migrated'
+[2020-10-19 08:54:38Z INFO ConfigurationStore] MigratedCredFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_migrated
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:38Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:38Z INFO HostContext] Well known config file 'Service': '/home/sandro/web/eslint-config-cecilia/actions-runner/.service'
+[2020-10-19 08:54:38Z INFO ConfigurationStore] ServiceConfigFilePath: /home/sandro/web/eslint-config-cecilia/actions-runner/.service
+[2020-10-19 08:54:38Z INFO CommandSettings] Flag 'help': 'False'
+[2020-10-19 08:54:38Z INFO CommandSettings] Flag 'version': 'False'
+[2020-10-19 08:54:38Z INFO CommandSettings] Flag 'commit': 'False'
+[2020-10-19 08:54:38Z INFO CommandSettings] Command 'configure': 'True'
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: 
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: |                                                                              |
+[2020-10-19 08:54:38Z INFO Terminal] WRITE: |                       
+[2020-10-19 08:54:38Z INFO Terminal] WRITE: Self-hosted runner registration
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE:                         |
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: |                                                                              |
+[2020-10-19 08:54:38Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2020-10-19 08:54:38Z INFO ConfigurationManager] ConfigureAsync
+[2020-10-19 08:54:38Z INFO ConfigurationStore] IsConfigured()
+[2020-10-19 08:54:38Z INFO ConfigurationStore] IsConfigured: False
+[2020-10-19 08:54:38Z INFO ConfigurationManager] Is configured: False
+[2020-10-19 08:54:38Z INFO CommandSettings] Arg 'url': 'https://github.com/SandroMiguel/eslint-config-cecilia'
+[2020-10-19 08:54:38Z INFO CommandSettings] Remove url from Arg dictionary.
+[2020-10-19 08:54:38Z INFO CommandSettings] Arg 'token': '***'
+[2020-10-19 08:54:38Z INFO CommandSettings] Remove token from Arg dictionary.
+[2020-10-19 08:54:39Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2020-10-19 08:54:39Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2020-10-19 08:54:39Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2020-10-19 08:54:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:54:39Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-10-19 08:54:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:54:39Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-10-19 08:54:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:54:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:54:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:54:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:54:40Z INFO Terminal] WRITE LINE: 
+[2020-10-19 08:54:40Z INFO ConfigurationManager] Test Connection complete.
+[2020-10-19 08:54:40Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:40Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:40Z INFO HostContext] Well known config file 'RSACredentials': '/home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams'
+[2020-10-19 08:54:40Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2020-10-19 08:54:40Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:54:40Z INFO RSAFileKeyManager] Which: 'chmod'
+[2020-10-19 08:54:40Z INFO RSAFileKeyManager] Location: '/bin/chmod'
+[2020-10-19 08:54:40Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:54:40Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   Arguments: '600 /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper] Failed to update oom_score_adj for PID: 9302.
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper] System.UnauthorizedAccessException: Access to the path '/proc/9302/oom_score_adj' is denied.
+ ---> System.IO.IOException: Permission denied
+   --- End of inner exception stack trace ---
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream.OpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path)
+   at System.IO.File.WriteAllText(String path, String contents)
+   at GitHub.Runner.Sdk.ProcessInvoker.WriteProcessOomScoreAdj(Int32 processId, Int32 oomScoreAdj)
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper] Process started with process id 9302, waiting for process exit.
+[2020-10-19 08:54:40Z INFO ProcessInvokerWrapper] Finished process 9302 with exit code 0, and elapsed time 00:00:00.0108200.
+[2020-10-19 08:54:40Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:54:40Z INFO ConfigurationManager] Found a self-hosted runner group with id {1} and name {2} 1, Default
+[2020-10-19 08:54:40Z INFO CommandSettings] Arg 'name': ''
+[2020-10-19 08:54:40Z INFO CommandSettings] Flag 'unattended': 'False'
+[2020-10-19 08:54:40Z INFO PromptManager] ReadValue
+[2020-10-19 08:54:40Z INFO Terminal] WRITE: Enter the name of runner: 
+[2020-10-19 08:54:40Z INFO Terminal] WRITE: [press Enter for sandro] 
+[2020-10-19 08:54:40Z INFO Terminal] READ LINE
+[2020-10-19 08:57:22Z INFO Terminal] Read value: 'eslint-config-cecilia-runner'
+[2020-10-19 08:57:22Z INFO Terminal] WRITE LINE: 
+[2020-10-19 08:57:22Z INFO CommandSettings] Arg 'labels': ''
+[2020-10-19 08:57:22Z INFO CommandSettings] Flag 'unattended': 'False'
+[2020-10-19 08:57:22Z INFO PromptManager] ReadValue
+[2020-10-19 08:57:22Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Linux', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2020-10-19 08:57:22Z INFO Terminal] WRITE: [press Enter to skip] 
+[2020-10-19 08:57:22Z INFO Terminal] READ LINE
+[2020-10-19 08:57:33Z INFO Terminal] Read value: ''
+[2020-10-19 08:57:33Z INFO Terminal] WRITE LINE: 
+[2020-10-19 08:57:34Z INFO ConfigurationStore] Saving OAuth credential @ /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials
+[2020-10-19 08:57:34Z INFO ConfigurationStore] Credentials Saved.
+[2020-10-19 08:57:34Z INFO ConfigurationStore] HasCredentials()
+[2020-10-19 08:57:34Z INFO ConfigurationStore] stored True
+[2020-10-19 08:57:34Z INFO CredentialManager] GetCredentialProvider
+[2020-10-19 08:57:34Z INFO CredentialManager] Creating type OAuth
+[2020-10-19 08:57:34Z INFO CredentialManager] Creating credential type: OAuth
+[2020-10-19 08:57:34Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:57:34Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2020-10-19 08:57:34Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:57:34Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-10-19 08:57:34Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:57:34Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-10-19 08:57:34Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-10-19 08:57:34Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:57:34Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:57:34Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-10-19 08:57:35Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 439ad0cc-e4ce-464f-aced-165ae6e37c4a
+ActivityId: fcf9a9e3-adac-465e-ae27-0d6ea7616633
+X-TFS-Session: d1fdcee4-d1a6-4b89-b061-a12c5ccac078
+X-VSS-E2EID: 42ecabf3-4138-4a95-9ccb-ab2ba7c9b4cc
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 481AF0D58AB743718D5D9028E5F6E8E7 Ref B: LIS01EDGE0303 Ref C: 2020-10-19T08:56:40Z
+Date: Mon, 19 Oct 2020 08:56:39 GMT
+
+[2020-10-19 08:57:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:57:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/sandro/web/eslint-config-cecilia/actions-runner/.credentials_rsaparams
+[2020-10-19 08:57:35Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-10-19 08:57:36Z INFO CommandSettings] Arg 'work': ''
+[2020-10-19 08:57:36Z INFO CommandSettings] Flag 'unattended': 'False'
+[2020-10-19 08:57:36Z INFO PromptManager] ReadValue
+[2020-10-19 08:57:36Z INFO Terminal] WRITE: Enter name of work folder: 
+[2020-10-19 08:57:36Z INFO Terminal] WRITE: [press Enter for _work] 
+[2020-10-19 08:57:36Z INFO Terminal] READ LINE
+[2020-10-19 08:57:51Z INFO Terminal] Read value: ''
+[2020-10-19 08:57:51Z INFO PromptManager] Falling back to the default: '_work'
+[2020-10-19 08:57:51Z INFO ConfigurationStore] Saving runner settings.
+[2020-10-19 08:57:51Z INFO ConfigurationStore] Settings Saved.
+[2020-10-19 08:57:51Z INFO Terminal] WRITE LINE: 
+[2020-10-19 08:57:51Z INFO Terminal] WRITE LINE: 
+[2020-10-19 08:57:51Z INFO SystemDControlManager] Service name 'actions.runner.SandroMiguel-eslint-config-cecilia.eslint-config-cecilia-.service' display name 'GitHub Actions Runner (SandroMiguel-eslint-config-cecilia.eslint-config-cecilia-runner)' will be used for service configuration.
+[2020-10-19 08:57:51Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:57:51Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:57:51Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:57:51Z INFO HostContext] Well known directory 'Bin': '/home/sandro/web/eslint-config-cecilia/actions-runner/bin'
+[2020-10-19 08:57:51Z INFO HostContext] Well known directory 'Root': '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:57:51Z INFO UnixUtil] Which: 'chmod'
+[2020-10-19 08:57:51Z INFO UnixUtil] Location: '/bin/chmod'
+[2020-10-19 08:57:51Z INFO UnixUtil] Running /bin/chmod 755 "/home/sandro/web/eslint-config-cecilia/actions-runner/svc.sh"
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper] Starting process:
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   Arguments: '755 "/home/sandro/web/eslint-config-cecilia/actions-runner/svc.sh"'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   Working directory: '/home/sandro/web/eslint-config-cecilia/actions-runner'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 9618.
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper] Process started with process id 9618, waiting for process exit.
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-10-19 08:57:51Z INFO ProcessInvokerWrapper] Finished process 9618 with exit code 0, and elapsed time 00:00:00.0020809.
+[2020-10-19 08:57:51Z INFO Listener] Runner execution has finished with return code 0

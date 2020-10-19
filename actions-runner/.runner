@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "eslint-config-cecilia-runner",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/EZV3yuNtJkiMfuogBJg9msYAltt52ZBsMeEhGFYGv6nqRlc8aU",
+  "gitHubUrl": "https://github.com/SandroMiguel/eslint-config-cecilia",
+  "workFolder": "_work"
+}

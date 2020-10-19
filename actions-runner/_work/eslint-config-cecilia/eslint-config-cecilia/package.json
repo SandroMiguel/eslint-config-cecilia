@@ -1,0 +1,64 @@
+{
+  "name": "eslint-config-cecilia",
+  "version": "2.1.1",
+  "description": "ESLint configuration for awesome projects",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version",
+    "test": "jest"
+  },
+  "files": [
+    ".eslintrc.js",
+    "index.js",
+    "rules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandroMiguel/eslint-config-cecilia.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "javascript",
+    "react",
+    "node"
+  ],
+  "author": {
+    "name": "Sandro Miguel Marques",
+    "email": "sandromiguel@sandromiguel.com",
+    "url": "http://sandromiguel.com"
+  },
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.6.5",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "prettier": "^2.1.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/jest": "^26.0.14",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0",
+    "jest": "^26.5.3",
+    "react": "^16.14.0",
+    "standard-version": "^9.0.0"
+  }
+}
