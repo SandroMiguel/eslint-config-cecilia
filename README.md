@@ -141,8 +141,6 @@ extensions for Visual Studio Code.
   [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
 - Code formatter config - [Prettier](https://www.npmjs.com/package/prettier)
 - Plugin -
-  [eslint-plugin-const-case](https://www.npmjs.com/package/eslint-plugin-const-case)
-- Plugin -
   [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 - Plugin -
   [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
