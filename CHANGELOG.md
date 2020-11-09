@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.1.1...v2.2.0) (2020-11-09)
+
+
+### Features
+
+* **index:** increase ecma version to 2020 ([31745f5](https://github.com/SandroMiguel/eslint-config-cecilia/commit/31745f57a9e3a83cd6b6ec96831b6f1cafeeb6a4))
+* add babel-eslint parser ([371f779](https://github.com/SandroMiguel/eslint-config-cecilia/commit/371f779f3e6db06164468216528acdcab2a2ab62))
+* add babel-eslint parser ([b3fd566](https://github.com/SandroMiguel/eslint-config-cecilia/commit/b3fd56662dbe9859d996a9023e7e2718cecc52a0))
+* remove babel-eslint ([20959fd](https://github.com/SandroMiguel/eslint-config-cecilia/commit/20959fdc45aab6f4e9e7ec8cdd617ead47427704))
+
 ### [2.1.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.1.0...v2.1.1) (2020-10-17)
 
 ## [2.1.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.0.3...v2.1.0) (2020-10-17)
