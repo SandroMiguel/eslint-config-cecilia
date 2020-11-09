@@ -13,4 +13,7 @@ module.exports = {
     jest: true,
     node: true,
   },
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
 }
