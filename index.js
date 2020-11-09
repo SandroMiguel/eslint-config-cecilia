@@ -7,7 +7,11 @@ module.exports = {
     './rules/react.js',
     './rules/cecilia.js',
   ],
+  parser: 'babel-eslint',
   env: {
+    browser: true,
+    es6: true,
     jest: true,
+    node: true,
   },
 }
