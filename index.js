@@ -8,6 +8,12 @@ module.exports = {
     './rules/cecilia.js',
   ],
   env: {
+    browser: true,
+    es6: true,
     jest: true,
+    node: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2020,
   },
 }
