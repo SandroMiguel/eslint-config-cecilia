@@ -1,4 +1,4 @@
-<p align="center"><img src="http://sandromiguel.com/host/eslint-config-cecilia.png" alt="React Sceleto" /></p>
+<p align="center"><img src="https://i.imgur.com/De2l7rX.png" alt="ESLint config Cecilia" /></p>
 
 # Welcome to ESLint config Cecilia
 
