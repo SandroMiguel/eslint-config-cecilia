@@ -1,4 +1,4 @@
-<p align="center"><img src="https://ibb.co/6rw9bRW" alt="ESLint config Cecilia" /></p>
+<p align="center"><img src="https://i.imgur.com/De2l7rX.png" alt="ESLint config Cecilia" /></p>
 
 # Welcome to ESLint config Cecilia
 
