@@ -172,4 +172,6 @@ or [open an issue](../../issues/new).
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 for details
 
-**~ sharing is caring ~**
+## ~ sharing is caring ~
+
+This project helped you? Please consider giving this repository a star :star:.
