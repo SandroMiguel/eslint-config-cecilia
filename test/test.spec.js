@@ -27,11 +27,30 @@ expect.extend({
   },
 })
 
+expect.extend({
+  noError(received, expected, message) {
+    const pass = received === expected
+    if (pass) {
+      return {
+        message: () => `expected '${expected}' | received '${received}'`,
+        pass: true,
+      }
+    }
+    return {
+      message: () =>
+        `This test case did not expect any rule violations, but there was a violation of the ${this.utils.printReceived(
+          received,
+        )} rule | message: ${this.utils.printReceived(message)}`,
+      pass: false,
+    }
+  },
+})
+
 test('jsdoc/require-example rule', async () => {
   const ruleId = 'jsdoc/require-example'
   const result = await fetchTestFiles(ruleId)
   const { messages } = result[0]
-  expect(messages[0] && messages[0].ruleId).toBe(
+  expect(messages[0] && messages[0].ruleId).noError(
     undefined,
     messages[0] && messages[0].message,
   )
@@ -53,6 +72,16 @@ test('react-hooks/rules-of-hooks', async () => {
   const { messages } = result[0]
   expect(messages[0] && messages[0].ruleId).toBe(
     ruleId,
+    messages[0] && messages[0].message,
+  )
+})
+
+test('react/react-in-jsx-scope', async () => {
+  const ruleId = 'react/react-in-jsx-scope'
+  const result = await fetchTestFiles(ruleId)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).noError(
+    undefined,
     messages[0] && messages[0].message,
   )
 })
