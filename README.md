@@ -3,7 +3,7 @@
 # Welcome to ESLint config Cecilia
 
 [![npm version](https://badge.fury.io/js/eslint-config-cecilia.svg)](https://badge.fury.io/js/eslint-config-cecilia)
-[![Dependency Status](https://david-dm.org/SandroMiguel/eslint-config-cecilia.svg)](https://david-dm.org/SandroMiguel/eslint-config-cecilia)
+[![Dependency Status](https://img.shields.io/david/SandroMiguel/eslint-config-cecilia)](https://img.shields.io/david/SandroMiguel/eslint-config-cecilia)
 [![license](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](LICENSE)
 
 **ESLint configuration for awesome projects.**
