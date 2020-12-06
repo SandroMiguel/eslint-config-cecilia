@@ -4,12 +4,13 @@
 ## Ignore NPM 'node_modules' directory
 **/node_modules
 
-## Ignore log files
-**/log
-yarn-error.log*
-
-## Ignore generated source maps
-*.map
+## Ignore Yarn files
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
 
 ## Other files to ignore (e.g. credentials)
 .env
