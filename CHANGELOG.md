@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.3.2...v2.4.0) (2021-01-19)
+
+
+### Features
+
+* disable import/prefer-default-export rule ([22be443](https://github.com/SandroMiguel/eslint-config-cecilia/commit/22be443d594ba7766a7fdb49ea1721c3b286240b))
+
 ### [2.3.2](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.3.0...v2.3.2) (2020-12-06)
 
 ### [2.3.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.3.0...v2.3.1) (2020-12-06)

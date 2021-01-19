@@ -46,12 +46,52 @@ expect.extend({
   },
 })
 
+test('arrow-parens rule', async () => {
+  const ruleId = 'arrow-parens'
+  const result = await fetchTestFiles(ruleId)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).toBe(
+    ruleId,
+    messages[0] && messages[0].message,
+  )
+})
+
+test('camelcase rule', async () => {
+  const ruleId = 'camelcase'
+  const result = await fetchTestFiles(ruleId)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).toBe(
+    ruleId,
+    messages[0] && messages[0].message,
+  )
+})
+
+test('import/prefer-default-export rule', async () => {
+  const ruleId = 'import/prefer-default-export'
+  const result = await fetchTestFiles(ruleId)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).noError(
+    undefined,
+    messages[0] && messages[0].message,
+  )
+})
+
 test('jsdoc/require-example rule', async () => {
   const ruleId = 'jsdoc/require-example'
   const result = await fetchTestFiles(ruleId)
   const { messages } = result[0]
   expect(messages[0] && messages[0].ruleId).noError(
     undefined,
+    messages[0] && messages[0].message,
+  )
+})
+
+test('no-multiple-empty-lines rule', async () => {
+  const ruleId = 'no-multiple-empty-lines'
+  const result = await fetchTestFiles(ruleId)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).toBe(
+    ruleId,
     messages[0] && messages[0].message,
   )
 })
@@ -82,36 +122,6 @@ test('react/react-in-jsx-scope', async () => {
   const { messages } = result[0]
   expect(messages[0] && messages[0].ruleId).noError(
     undefined,
-    messages[0] && messages[0].message,
-  )
-})
-
-test('arrow-parens rule', async () => {
-  const ruleId = 'arrow-parens'
-  const result = await fetchTestFiles(ruleId)
-  const { messages } = result[0]
-  expect(messages[0] && messages[0].ruleId).toBe(
-    ruleId,
-    messages[0] && messages[0].message,
-  )
-})
-
-test('camelcase rule', async () => {
-  const ruleId = 'camelcase'
-  const result = await fetchTestFiles(ruleId)
-  const { messages } = result[0]
-  expect(messages[0] && messages[0].ruleId).toBe(
-    ruleId,
-    messages[0] && messages[0].message,
-  )
-})
-
-test('no-multiple-empty-lines rule', async () => {
-  const ruleId = 'no-multiple-empty-lines'
-  const result = await fetchTestFiles(ruleId)
-  const { messages } = result[0]
-  expect(messages[0] && messages[0].ruleId).toBe(
-    ruleId,
     messages[0] && messages[0].message,
   )
 })
