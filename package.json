@@ -1,11 +1,12 @@
 {
   "name": "eslint-config-cecilia",
-  "version": "2.4.0",
+  "version": "2.5.1",
   "description": "ESLint configuration for awesome projects",
   "main": "index.js",
   "scripts": {
     "release": "standard-version",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "husky install"
   },
   "files": [
     ".eslintrc.js",
@@ -29,37 +30,31 @@
     "url": "http://sandromiguel.com"
   },
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "yarn test"
-    }
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "dependencies": {
-    "eslint": "^7.18.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^31.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsdoc": "^36.1.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.4.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@types/jest": "^26.0.20",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/jest": "^27.0.2",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^4.3.8",
-    "jest": "^26.6.3",
-    "react": "^17.0.1",
-    "standard-version": "^9.1.0"
+    "husky": "^7.0.2",
+    "jest": "^27.2.1",
+    "react": "^17.0.2",
+    "standard-version": "^9.3.1"
   }
 }
