@@ -4,7 +4,6 @@
   "description": "ESLint configuration for awesome projects",
   "main": "index.js",
   "scripts": {
-    "release": "standard-version",
     "test": "jest",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
