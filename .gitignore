@@ -11,6 +11,15 @@ yarn-error.log*
 ## Ignore generated source maps
 *.map
 
+## Yarn - Not using Zero-Installs
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 ## Other files to ignore (e.g. credentials)
 .env
 .npmrc
