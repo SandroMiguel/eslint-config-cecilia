@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.6](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.5.5...v2.5.6) (2023-01-14)
+
+
+### Bug Fixes
+
+* bump ESLint from 7.32.0 to 8.31.0 ([355d408](https://github.com/SandroMiguel/eslint-config-cecilia/commit/355d408c8c433a638d24f12d1dcf3c4c4f6224bf))
+
 ### [2.5.5](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.5.4...v2.5.5) (2021-09-22)
 
 ### [2.5.4](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.5.3...v2.5.4) (2021-09-22)
