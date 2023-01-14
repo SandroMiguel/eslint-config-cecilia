@@ -3,6 +3,6 @@
 // https://eslint.org/docs/rules/camelcase
 
 /* eslint-disable no-unused-vars */
-const obj = {
+const person = {
   first_name: 'John'
 }

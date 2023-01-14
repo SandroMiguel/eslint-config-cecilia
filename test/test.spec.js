@@ -135,3 +135,13 @@ test('semi rule', async () => {
     messages[0] && messages[0].message,
   )
 })
+
+test('unicorn/catch-error-name', async () => {
+  const ruleId = 'unicorn/catch-error-name'
+  const result = await fetchTestFiles(ruleId)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).toBe(
+    ruleId,
+    messages[0] && messages[0].message,
+  )
+})

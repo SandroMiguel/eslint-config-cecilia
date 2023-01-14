@@ -10,11 +10,11 @@ module.exports = {
   ],
   env: {
     browser: true,
-    es6: true,
+    es2022: true,
     jest: true,
     node: true,
   },
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
   },
 }
