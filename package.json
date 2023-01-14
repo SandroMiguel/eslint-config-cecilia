@@ -36,8 +36,10 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "peerDependencies": {
+    "eslint": "^8.31.0"
+  },
   "dependencies": {
-    "eslint": "^8.31.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.4",
@@ -46,6 +48,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.0",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unicorn": "^45.0.2",
     "prettier": "^2.8.3"
   },
   "devDependencies": {

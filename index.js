@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    './rules/unicorn.js',
     './rules/airbnb.js',
     './rules/prettier.js',
     './rules/jsdoc.js',
