@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.5.6...v2.6.0) (2023-01-14)
+
+
+### Features
+
+* add eslint-plugin-unicorn ([5079eef](https://github.com/SandroMiguel/eslint-config-cecilia/commit/5079eef6b48723e0cbb1863ce820311d76947185))
+
 ## [2.5.6](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.5.5...v2.5.6) (2023-01-14)
 
 
