@@ -4,6 +4,7 @@
   "description": "ESLint configuration for awesome projects",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "jest",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
