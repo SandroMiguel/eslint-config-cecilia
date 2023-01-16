@@ -3251,8 +3251,6 @@ __metadata:
     pinst: ^3.0.0
     prettier: ^2.8.3
     react: ^17.0.2
-  peerDependencies:
-    eslint: ^8.32.0
   languageName: unknown
   linkType: soft
 

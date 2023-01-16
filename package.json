@@ -4,6 +4,7 @@
   "description": "ESLint configuration for awesome projects",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "jest",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
@@ -35,9 +36,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "peerDependencies": {
-    "eslint": "^8.32.0"
   },
   "dependencies": {
     "eslint": "^8.32.0",
