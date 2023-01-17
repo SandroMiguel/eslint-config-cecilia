@@ -6,11 +6,12 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
+    "postinstall": "npm run postinstall:dependencies && npm run postinstall:eslintrc && npm run postinstall:lint",
+    "postinstall:dependencies": "node postinstall-dependencies.mjs",
+    "postinstall:eslintrc": "node postinstall-eslintrc.mjs",
+    "postinstall:lint": "node postinstall-lint.mjs",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
-    "postinstall": "npm run postinstall:lint && npm run postinstall:dependencies",
-    "postinstall:lint": "node postinstall-lint.mjs",
-    "postinstall:dependencies": "node postinstall-dependencies.mjs",
     "prepare": "husky install"
   },
   "files": [
