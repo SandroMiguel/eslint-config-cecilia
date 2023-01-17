@@ -1,5 +1,4 @@
 import readline from 'node:readline'
-import { exec } from 'node:child_process'
 import fs from 'node:fs'
 
 const readLineInterface = readline.createInterface({
