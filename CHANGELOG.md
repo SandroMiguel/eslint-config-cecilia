@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.2](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.8.1...v2.8.2) (2023-01-17)
+
+
+### Bug Fixes
+
+* add bin/ to files ([c1d50f4](https://github.com/SandroMiguel/eslint-config-cecilia/commit/c1d50f4507d0f041f5bed2bc0dfd9327fa1e2ca1))
+
 ## [2.8.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.8.0...v2.8.1) (2023-01-17)
 
 
