@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.8.0...v2.8.1) (2023-01-17)
+
+
+### Bug Fixes
+
+* enable postinstall ([7f3beeb](https://github.com/SandroMiguel/eslint-config-cecilia/commit/7f3beeb9c8d69ed480b57b2a99b95a94a5d9bb71))
+
 ## [2.8.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.7.0...v2.8.0) (2023-01-17)
 
 
