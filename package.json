@@ -15,6 +15,7 @@
   "files": [
     ".eslintrc.js",
     "index.js",
+    "bin",
     "rules"
   ],
   "repository": {
