@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readline from 'node:readline'
 import { exec } from 'node:child_process'
 
@@ -7,7 +9,7 @@ const readLineInterface = readline.createInterface({
 })
 
 readLineInterface.question(
-  'Install with npm (1) or yarn (2) ? (1/2) ',
+  'Install dependencies with npm (1) or yarn (2) ? (1/2) ',
   (userInput) => {
     let install
     if (userInput.toLowerCase() === '1') {

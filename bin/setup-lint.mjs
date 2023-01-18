@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readline from 'node:readline'
 import { exec } from 'node:child_process'
 
@@ -15,7 +17,7 @@ readLineInterface.question(
       console.log('Now you can use "npm run lint" to lint your files.')
     } else {
       console.log(
-        'You can manually add this command in your package.json scripts: "lint": "eslint ."',
+        'You can manually add the following command in your package.json scripts: "lint": "eslint ."',
       )
     }
   },

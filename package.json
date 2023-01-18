@@ -2,14 +2,13 @@
   "name": "eslint-config-cecilia",
   "version": "2.8.3",
   "description": "ESLint configuration for awesome projects",
-  "main": "index.js",
+  "bin": {
+    "cecilia": "./bin/cecilia.mjs"
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "postinstall:dependencies": "node bin/postinstall-dependencies.mjs",
-    "postinstall:eslintrc": "node bin/postinstall-eslintrc.mjs",
-    "postinstall:lint": "node bin/postinstall-lint.mjs",
-    "prepare": "husky install && npm run postinstall:dependencies && npm run postinstall:eslintrc && npm run postinstall:lint"
+    "prepare": "husky install"
   },
   "files": [
     ".eslintrc.js",
@@ -48,7 +47,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsdoc": "^39.6.4",
+    "eslint-plugin-jsdoc": "^39.6.6",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.1",
