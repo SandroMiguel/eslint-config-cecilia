@@ -6,11 +6,10 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "postinstall": "npm run postinstall:dependencies && npm run postinstall:eslintrc && npm run postinstall:lint",
     "postinstall:dependencies": "node bin/postinstall-dependencies.mjs",
     "postinstall:eslintrc": "node bin/postinstall-eslintrc.mjs",
     "postinstall:lint": "node bin/postinstall-lint.mjs",
-    "prepare": "husky install"
+    "prepare": "husky install && npm run postinstall:dependencies && npm run postinstall:eslintrc && npm run postinstall:lint"
   },
   "files": [
     ".eslintrc.js",
