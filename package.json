@@ -10,7 +10,7 @@
     "postinstall:dependencies": "node bin/postinstall-dependencies.mjs",
     "postinstall:eslintrc": "node bin/postinstall-eslintrc.mjs",
     "postinstall:lint": "node bin/postinstall-lint.mjs",
-    "prepare": "husky install"
+    "prepare": "husky install && npm run postinstall:dependencies"
   },
   "files": [
     ".eslintrc.js",
