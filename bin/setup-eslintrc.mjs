@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readline from 'node:readline'
 import fs from 'node:fs'
 
@@ -11,13 +13,17 @@ readLineInterface.question(
   (userInput) => {
     readLineInterface.close()
     if (userInput.toLowerCase() === 'y') {
-      fs.writeFile('.eslintrc.js', '{"extends": "cecilia"}', (error) => {
-        if (error) {
-          console.log(error)
-          return
-        }
-        console.log('The file was created!')
-      })
+      fs.writeFile(
+        '.eslintrc.js',
+        'module.exports = { extends: "cecilia" }',
+        (error) => {
+          if (error) {
+            console.log(error)
+            return
+          }
+          console.log('The file .eslintrc.js was created!')
+        },
+      )
     }
   },
 )
