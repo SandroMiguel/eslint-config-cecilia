@@ -21,32 +21,52 @@ ESLint config Cecilia rules are based on [Prettier](https://www.npmjs.com/packag
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)
+1. [Installation](#installation)
 1. [Contributing](#contributing)
 1. [Questions](#questions)
 1. [License](#license)
 
-## Getting Started
+## Installation
 
-### Installation
+### Set up the config automatically (recommended)
 
-Install ESLint config Cecilia.
-
-#### Step 1 - Install with Yarn
+#### With npm
 
 ```sh
-yarn add eslint-config-cecilia --dev
+npm i -D eslint-config-cecilia
+npx cecilia
 ```
 
-##### Or install with npm
+1. Select "1" to install the necessary dependencies with npm
+1. Select "y" to create the `.eslintrc.js` file
+1. Select "y" to add the `lint` script command in your `package.json`
+
+#### With Yarn
 
 ```sh
-npm install -D eslint-config-cecilia
+yarn add --dev eslint-config-cecilia
+yarn cecilia
 ```
 
-### Configure
+1. Select "2" to install the necessary dependencies with Yarn
+1. Select "y" to create the `.eslintrc.js` file
+1. Select "y" to add the `lint` script command in your `package.json`
 
-#### Step 2 - Create a `.eslintrc.js` file in your project root directory and use the `extends` attribute.
+### Set up the config manually
+
+#### With npm
+
+```sh
+npm i -D eslint-config-cecilia eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn
+```
+
+#### With Yarn
+
+```sh
+yarn add --dev eslint-config-cecilia eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn
+```
+
+#### Create a `.eslintrc.js` file in your project root directory and use the `extends` attribute.
 
 Paste this code to extend the ESLint ruleset:
 
@@ -71,7 +91,7 @@ module.exports = {
 }
 ```
 
-##### Pro tip
+**Pro tip**
 
 Check the [list of available rules](https://eslint.org/docs/rules/).
 
@@ -90,7 +110,7 @@ module.exports = {
 }
 ```
 
-#### Step 3 - Create a `.prettierrc.js` file in your project root directory and change some rules.
+#### Create a `.prettierrc.js` file in your project root directory and change some rules.
 
 ```
 module.exports = {
@@ -100,7 +120,7 @@ module.exports = {
 }
 ```
 
-#### Step 4 - Add scripts to the `package.json` file
+#### Add scripts to the `package.json` file
 
 Open the `package.json` file and add the following scripts entries:
 
@@ -118,7 +138,7 @@ Open the `package.json` file and add the following scripts entries:
 
 ### Usage
 
-#### Step 5 - Run the script
+#### Run the script
 
 `yarn lint` or `npm run lint` to lint your code.
 
@@ -126,7 +146,7 @@ Open the `package.json` file and add the following scripts entries:
 
 `yarn format` or `npm run format` to format your code.
 
-##### Pro tip
+**Pro tip**
 
 Install
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
