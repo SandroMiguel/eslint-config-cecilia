@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.8.4...v2.9.0) (2023-01-19)
+
+
+### Features
+
+* improve automatic setup ([f096038](https://github.com/SandroMiguel/eslint-config-cecilia/commit/f096038ddb00496c1381c4d0bdbe0d3be2663b39))
+
 ## [2.8.4](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.8.3...v2.8.4) (2023-01-19)
 
 

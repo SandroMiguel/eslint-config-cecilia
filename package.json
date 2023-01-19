@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cecilia",
-  "version": "2.8.4",
+  "version": "2.9.0",
   "description": "ESLint configuration for awesome projects",
   "bin": {
     "cecilia": "./bin/cecilia.mjs"
