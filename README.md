@@ -6,25 +6,28 @@
 ![tests](https://github.com/SandroMiguel/eslint-config-cecilia/actions/workflows/tests.yml/badge.svg)
 [![license](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](LICENSE)
 
-**ESLint configuration for awesome projects.**
+**ESLint configuration for my projects.**
 
 ESLint config Cecilia is an opinionated
 [shareable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs.html)
-used in JavaScript projects ([Vanilla.js](http://vanilla-js.com/),
+used in my JavaScript projects ([Vanilla.js](http://vanilla-js.com/),
 [React.js](https://reactjs.org/) or [Node.js](https://nodejs.org/)).
-
-The goal of the ESLint config Cecilia is to keep the code clean and consistent
-using [Prettier](https://www.npmjs.com/package/prettier) and
-[ESLint](https://eslint.org/).
-
-ESLint config Cecilia rules are based on [Prettier](https://www.npmjs.com/package/prettier) and [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
 ## Table of Contents
 
+1. [Goals](#goals)
 1. [Installation](#installation)
 1. [Contributing](#contributing)
 1. [Questions](#questions)
 1. [License](#license)
+
+## Goals
+
+- I want to use [ESLint](https://eslint.org/) to lint my files
+- I want to use [Prettier](https://www.npmjs.com/package/prettier) to format my code
+- I want to base my rules on the major configs, such as [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+- I want to keep the code clean and consistent across several projects
+- I don't want to install/maintain/configure ESLint/Prettier/plugins/etc. independently in all projects
 
 ## Installation
 
@@ -39,7 +42,8 @@ npx cecilia
 
 1. Select "1" to install the necessary dependencies with npm
 1. Select "y" to create the `.eslintrc.js` file
-1. Select "y" to add the `lint` script command in your `package.json`
+1. Select "y" to create the `.prettierrc.js` file
+1. Select "y" to add the `lint` script commands in your `package.json`
 
 #### With Yarn
 
@@ -50,7 +54,8 @@ yarn cecilia
 
 1. Select "2" to install the necessary dependencies with Yarn
 1. Select "y" to create the `.eslintrc.js` file
-1. Select "y" to add the `lint` script command in your `package.json`
+1. Select "y" to create the `.prettierrc.js` file
+1. Select "y" to add the `lint` script commands in your `package.json`
 
 ### Set up the config manually
 

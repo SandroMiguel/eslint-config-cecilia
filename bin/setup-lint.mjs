@@ -14,6 +14,10 @@ readLineInterface.question(
     readLineInterface.close()
     if (userInput.toLowerCase() === 'y') {
       exec('npm pkg set scripts.lint="eslint ."')
+      exec('npm pkg set scripts.lint:fix="eslint . --fix"')
+      exec(
+        'npm pkg set scripts.format="prettier --write \'./**/*.{js,jsx,json}\'"',
+      )
       console.log('Now you can use "npm run lint" to lint your files.')
     } else {
       console.log(
