@@ -17,6 +17,7 @@ used in my JavaScript projects ([Vanilla.js](http://vanilla-js.com/),
 
 1. [Goals](#goals)
 1. [Installation](#installation)
+1. [Credits](#credits)
 1. [Contributing](#contributing)
 1. [Questions](#questions)
 1. [License](#license)
@@ -177,6 +178,7 @@ extensions for Visual Studio Code.
   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
 - Plugin -
   [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
 - IDE coding style - [EditorConfig](https://editorconfig.org/)
 - Logo gear - made by [Freepik](http://www.freepik.com) from
   [www.flaticon.com](https://www.flaticon.com/) is licensed by
