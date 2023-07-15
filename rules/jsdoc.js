@@ -11,9 +11,6 @@ module.exports = {
     // Reports invalid types
     'jsdoc/check-types': 'warn',
 
-    // Enforces a consistent padding of the block description.
-    'jsdoc/newline-after-description': 'warn',
-
     // Requires that block description and tag description
     // are written in complete sentences
     'jsdoc/require-description-complete-sentence': 'warn',
