@@ -66,7 +66,7 @@ test('camelcase rule', async () => {
   )
 })
 
-test('import/prefer-default-export rule', async () => {
+test('ignore import/prefer-default-export rule', async () => {
   const ruleId = 'import/prefer-default-export'
   const result = await fetchTestFiles(ruleId)
   const { messages } = result[0]
@@ -76,7 +76,7 @@ test('import/prefer-default-export rule', async () => {
   )
 })
 
-test('jsdoc/require-example rule', async () => {
+test('ignore jsdoc/require-example rule', async () => {
   const ruleId = 'jsdoc/require-example'
   const result = await fetchTestFiles(ruleId)
   const { messages } = result[0]
@@ -116,7 +116,7 @@ test('react-hooks/rules-of-hooks', async () => {
   )
 })
 
-test('react/react-in-jsx-scope', async () => {
+test('ignore react/react-in-jsx-scope', async () => {
   const ruleId = 'react/react-in-jsx-scope'
   const result = await fetchTestFiles(ruleId)
   const { messages } = result[0]
@@ -142,6 +142,16 @@ test('unicorn/catch-error-name', async () => {
   const { messages } = result[0]
   expect(messages[0] && messages[0].ruleId).toBe(
     ruleId,
+    messages[0] && messages[0].message,
+  )
+})
+
+test('ignore unicorn/filename-case', async () => {
+  const filename = 'unicorn/filenameCase'
+  const result = await fetchTestFiles(filename)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).toBe(
+    undefined,
     messages[0] && messages[0].message,
   )
 })
