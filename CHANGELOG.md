@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.10.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.9.1...v2.10.0) (2023-07-27)
+
+
+### Features
+
+* **unicorn.js:** disable `unicorn/filename-case` rule ([d1746d4](https://github.com/SandroMiguel/eslint-config-cecilia/commit/d1746d4ea524b208d4ce47e2734b717a3cb2c3ec))
+
+
+### Bug Fixes
+
+* **jsdoc.js:** remove jsdoc/newline-after-description ([4736bf7](https://github.com/SandroMiguel/eslint-config-cecilia/commit/4736bf7e7dff7d2b947d812cb6b8e28939c1b614))
+
 ## [2.9.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.9.0...v2.9.1) (2023-01-23)
 
 
