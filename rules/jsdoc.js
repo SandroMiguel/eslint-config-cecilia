@@ -38,5 +38,14 @@ module.exports = {
 
     // Requires that @returns tag has type value
     'jsdoc/require-returns-type': 'warn',
+
+    // Enforce no abbreviations
+    'unicorn/prevent-abbreviations': 'off',
+
+    // Enforce no array for each
+    'unicorn/no-array-for-each': 'off',
+
+    // Enforce no array reduce
+    'unicorn/no-array-reduce': 'off',
   },
 }
