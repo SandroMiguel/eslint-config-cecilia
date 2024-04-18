@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.10.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.10.0...v2.10.1) (2024-04-18)
+
+
+### Bug Fixes
+
+* **setup-dependencies.mjs:** force eslint@^8 ([87d8e47](https://github.com/SandroMiguel/eslint-config-cecilia/commit/87d8e475742fe00673e369052dc630b3fbee632a))
+
 ## [2.10.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v2.9.1...v2.10.0) (2023-07-27)
 
 
