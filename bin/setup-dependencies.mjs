@@ -9,16 +9,16 @@ const readLineInterface = readline.createInterface({
 })
 
 readLineInterface.question(
-  'Install dependencies with npm (1) or yarn (2) ? (1/2) ',
+  'Install dependencies with npm(1) or yarn(2) ? (1/2) ',
   (userInput) => {
     let install
     if (userInput.toLowerCase() === '1') {
       install = exec(
-        'npm i -D eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn',
+        'npm i -D eslint@^8 prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn',
       )
     } else if (userInput.toLowerCase() === '2') {
       install = exec(
-        'yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn',
+        'yarn add --dev eslint@^8 prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn',
       )
     }
     install.stdout.pipe(process.stdout)
