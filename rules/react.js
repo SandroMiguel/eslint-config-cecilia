@@ -14,5 +14,9 @@ module.exports = {
     // Prevent missing props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': 0,
+
+    // Prevent missing React when using JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+    'react/react-in-jsx-scope': 'off',
   },
 }
