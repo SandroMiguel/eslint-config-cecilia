@@ -32,7 +32,8 @@ let config
 
 try {
   config = require(`./presets/index.${projectType}.js`)
-} catch (error) {
+  config.extends.push('./rules/cecilia.js')
+} catch {
   throw new Error(
     `[eslint-config-cecilia] Unknown or unsupported projectType "${projectType}".\n` +
       '💡 Make sure you ran:\n\n' +

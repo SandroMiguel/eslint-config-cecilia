@@ -8,4 +8,10 @@ module.exports = {
     './rules/react-hooks.js',
     './rules/react.js',
   ],
+  parserOptions: {
+    ...base.parserOptions,
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
 }

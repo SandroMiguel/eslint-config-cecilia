@@ -3,7 +3,8 @@
   "version": "3.0.0",
   "description": "ESLint configuration for awesome projects",
   "bin": {
-    "cecilia": "./bin/cecilia.mjs"
+    "cecilia": "./bin/cecilia.mjs",
+    "cecilia:debug": "./bin/debug-config.mjs"
   },
   "scripts": {
     "lint": "eslint .",

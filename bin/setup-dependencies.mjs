@@ -51,7 +51,7 @@ rl.question(
           }
           case '3': {
             allDeps.push(...react, ...node)
-            projectType = 'react' // fallback para o preset react
+            projectType = 'react'
             break
           }
           case '4': {
