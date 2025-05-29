@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.3](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.0.2...v3.0.3) (2025-05-29)
+
+
+### Bug Fixes
+
+* add execute permission to debug-config script ([1f35ed7](https://github.com/SandroMiguel/eslint-config-cecilia/commit/1f35ed7b31eb6faa0b3ab3554ff992b8b5203315))
+
 ## [3.0.2](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.0.1...v3.0.2) (2025-05-29)
 
 
