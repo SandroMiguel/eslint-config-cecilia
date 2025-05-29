@@ -7,7 +7,7 @@ if (!fs.existsSync(configPath)) {
   throw new Error(
     '\n\n❌ [eslint-config-cecilia] Missing or invalid configuration.\n' +
       '💡 Run the following to set up ESLint properly:\n\n' +
-      '   npx eslint-config-cecilia\n',
+      '   npx cecilia\n',
   )
 }
 
@@ -18,13 +18,13 @@ try {
   projectType = configFile.projectType
 } catch {
   throw new Error(
-    '[eslint-config-cecilia] Failed to parse eslint-config.json. Run: npx eslint-config-cecilia',
+    '[eslint-config-cecilia] Failed to parse eslint-config.json. Run: npx cecilia',
   )
 }
 
 if (!projectType) {
   throw new Error(
-    '[eslint-config-cecilia] Missing "projectType" in eslint-config.json. Run: npx eslint-config-cecilia',
+    '[eslint-config-cecilia] Missing "projectType" in eslint-config.json. Run: npx cecilia',
   )
 }
 
@@ -37,7 +37,7 @@ try {
   throw new Error(
     `[eslint-config-cecilia] Unknown or unsupported projectType "${projectType}".\n` +
       '💡 Make sure you ran:\n\n' +
-      '   npx eslint-config-cecilia\n',
+      '   npx cecilia\n',
   )
 }
 

@@ -15,6 +15,7 @@
     ".eslintrc.js",
     "index.js",
     "bin",
+    "presets",
     "rules"
   ],
   "repository": {
