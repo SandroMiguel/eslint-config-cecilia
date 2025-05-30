@@ -1,6 +1,6 @@
 module.exports = {
   rules: {
-    // Require parens in arrow function arguments
+    // Parentheses around arrow function arguments
     // https://eslint.org/docs/rules/arrow-parens
     'arrow-parens': ['error', 'always'],
 

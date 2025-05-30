@@ -32,7 +32,8 @@ let config
 
 try {
   config = require(`./presets/index.${projectType}.js`)
-  config.extends.push('./rules/cecilia.js')
+  // Always extend Prettier and Cecilia rules at the end to avoid conflicts
+  config.extends.push('./rules/prettier.js', './rules/cecilia.js')
 } catch {
   throw new Error(
     `[eslint-config-cecilia] Unknown or unsupported projectType "${projectType}".\n` +
