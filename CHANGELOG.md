@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.4](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.0.3...v3.0.4) (2025-05-30)
+
+
+### Bug Fixes
+
+* extend Prettier and Cecilia rules at the end to avoid conflicts ([8539ecb](https://github.com/SandroMiguel/eslint-config-cecilia/commit/8539ecbc9b2e931ebfa08167aafdfa009caf9cdb))
+
 ## [3.0.3](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.0.2...v3.0.3) (2025-05-29)
 
 
