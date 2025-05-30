@@ -5,6 +5,7 @@
 [![npm version](https://badge.fury.io/js/eslint-config-cecilia.svg)](https://badge.fury.io/js/eslint-config-cecilia)
 ![tests](https://github.com/SandroMiguel/eslint-config-cecilia/actions/workflows/tests.yml/badge.svg)
 [![license](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](LICENSE)
+[![Made with ❤️ by @sandro_m_m](https://img.shields.io/badge/made%20with%20%E2%9D%A4%EF%B8%8F%20by-@sandro__m__m-ff69b4)](https://github.com/SandroMiguel)
 
 **ESLint configuration for my projects.**
 
@@ -41,48 +42,22 @@ npm i -D eslint-config-cecilia
 npx cecilia
 ```
 
-1. Select "1" to install the necessary dependencies with npm
-1. Select "y" to create the `.eslintrc.js` file
-1. Select "y" to create the `.prettierrc.js` file
-1. Select "y" to add the `lint` script commands in your `package.json`
-
-#### With Yarn
+#### Or with Yarn
 
 ```sh
 yarn add --dev eslint-config-cecilia
 yarn cecilia
 ```
 
-1. Select "2" to install the necessary dependencies with Yarn
+1. Select "1" or "2" to install the necessary dependencies with npm/Yarn
+1. Select the type of project: React (1) Node (2) Both (3) None (4)
 1. Select "y" to create the `.eslintrc.js` file
 1. Select "y" to create the `.prettierrc.js` file
 1. Select "y" to add the `lint` script commands in your `package.json`
 
-### Set up the config manually
+#### Optional - Override Rules.
 
-#### With npm
-
-```sh
-npm i -D eslint-config-cecilia eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn
-```
-
-#### With Yarn
-
-```sh
-yarn add --dev eslint-config-cecilia eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn
-```
-
-#### Create a `.eslintrc.js` file in your project root directory and use the `extends` attribute.
-
-Paste this code to extend the ESLint ruleset:
-
-```
-module.exports = {
-  extends: 'cecilia',
-}
-```
-
-**Optional - Override Rules**
+Use the `.eslintrc.js` file to override the rules.
 
 For more information, see "[Configuring Rules](https://eslint.org/docs/user-guide/configuring#configuring-rules)" in the ESLint Help.
 
@@ -116,7 +91,9 @@ module.exports = {
 }
 ```
 
-#### Create a `.prettierrc.js` file in your project root directory and change some rules.
+**Optional - Use `.prettierrc.js` file to change some rules**
+
+Example:
 
 ```
 module.exports = {
@@ -126,7 +103,7 @@ module.exports = {
 }
 ```
 
-#### Add scripts to the `package.json` file
+**Optional - Add scripts to the `package.json` file**
 
 Open the `package.json` file and add the following scripts entries:
 
@@ -159,6 +136,40 @@ Install
 and
 [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 extensions for Visual Studio Code.
+
+## Debugging
+
+If you want to check the final ESLint config used by Cecilia, run:
+
+```sh
+npx cecilia:debug
+```
+
+It will print the resolved config, including all extended rules and environments, like this:
+
+```json
+{
+  "extends": [
+    "./rules/unicorn.js",
+    "./rules/prettier.js",
+    "./rules/jsdoc.js",
+    "./rules/airbnb.js",
+    "./rules/react-hooks.js",
+    "./rules/react.js",
+    "./rules/cecilia.js"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": { "jsx": true }
+  }
+}
+```
 
 ## Credits
 
