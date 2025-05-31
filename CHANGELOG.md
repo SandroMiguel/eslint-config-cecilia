@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.0.4...v3.1.0) (2025-05-31)
+
+
+### Features
+
+* upgrade to ESLint v9 and switch to ESM ([534cc59](https://github.com/SandroMiguel/eslint-config-cecilia/commit/534cc59d7e921c1c4ed7cada4cdeaac338388688))
+
+
+### Bug Fixes
+
+* **package.json:** rename bin command from cecilia:debug to cecilia-debug to fix invalid bin entry ([edfa1a4](https://github.com/SandroMiguel/eslint-config-cecilia/commit/edfa1a4b9a55987fa8a5e238a047a050fabfc570))
+
 ## [3.0.4](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.0.3...v3.0.4) (2025-05-30)
 
 
