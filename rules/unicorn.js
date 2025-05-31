@@ -1,7 +1,12 @@
-module.exports = {
-  extends: ['plugin:unicorn/recommended'],
+import unicornPlugin from 'eslint-plugin-unicorn'
+
+export default {
+  plugins: {
+    unicorn: unicornPlugin,
+  },
   rules: {
-    'unicorn/filename-case': 0,
-    'unicorn/prevent-abbreviations': 0,
+    ...unicornPlugin.configs.recommended.rules,
+    'unicorn/filename-case': 'off',
+    'unicorn/prevent-abbreviations': 'off',
   },
 }

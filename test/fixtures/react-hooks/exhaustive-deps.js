@@ -3,7 +3,6 @@
 // Either include it or remove the dependency array
 // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
 
-/* eslint-disable no-console */
 import React, { useEffect } from 'react'
 
 export default function SomeComponent({ propA, propB }) {

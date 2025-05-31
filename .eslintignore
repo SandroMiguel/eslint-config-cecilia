@@ -1,2 +1,0 @@
-# Do not run Linter against files inside "fixtures/" folder
-test/fixtures/*

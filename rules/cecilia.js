@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // Parentheses around arrow function arguments
     // https://eslint.org/docs/rules/arrow-parens

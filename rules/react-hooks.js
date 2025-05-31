@@ -1,10 +1,11 @@
-module.exports = {
-  plugins: ['react-hooks'],
-  rules: {
-    // Checks effect dependencies
-    'react-hooks/exhaustive-deps': 'warn',
+import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
-    // Enforce Rules of Hooks
+export default {
+  plugins: {
+    'react-hooks': reactHooksPlugin,
+  },
+  rules: {
+    'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
   },
 }

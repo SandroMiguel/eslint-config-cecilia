@@ -1,8 +1,10 @@
-module.exports = {
-  extends: ['prettier'],
-  plugins: ['prettier'],
+import prettierPlugin from 'eslint-plugin-prettier'
+
+export default {
+  plugins: {
+    prettier: prettierPlugin,
+  },
   rules: {
-    // Prettier
     'prettier/prettier': ['error'],
   },
 }

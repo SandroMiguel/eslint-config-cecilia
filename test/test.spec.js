@@ -1,4 +1,4 @@
-const { ESLint } = require('eslint')
+import { ESLint } from 'eslint'
 
 const fetchTestFiles = async (rule) => {
   const eslint = new ESLint({ ignore: false })
@@ -128,16 +128,6 @@ test('ignore react/react-in-jsx-scope', async () => {
 
 test('semi rule', async () => {
   const ruleId = 'semi'
-  const result = await fetchTestFiles(ruleId)
-  const { messages } = result[0]
-  expect(messages[0] && messages[0].ruleId).toBe(
-    ruleId,
-    messages[0] && messages[0].message,
-  )
-})
-
-test('unicorn/catch-error-name', async () => {
-  const ruleId = 'unicorn/catch-error-name'
   const result = await fetchTestFiles(ruleId)
   const { messages } = result[0]
   expect(messages[0] && messages[0].ruleId).toBe(

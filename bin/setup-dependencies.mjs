@@ -16,12 +16,12 @@ rl.question(
       'What type of project is this?\nReact(1), Node(2), Both(3), or None(4)? (1/2/3/4) ',
       (projectTypeInput) => {
         const base = [
-          'eslint@^8',
+          'eslint',
           'prettier',
           'eslint-config-prettier',
           'eslint-plugin-prettier',
           'eslint-plugin-jsdoc',
-          'eslint-plugin-unicorn@^56.0.1',
+          'eslint-plugin-unicorn',
         ]
 
         const react = [
@@ -73,13 +73,13 @@ rl.question(
 
           try {
             writeFileSync(
-              'eslint-config.json',
+              'eslint.cecilia.json',
               JSON.stringify(configJson, null, 2),
               'utf8',
             )
-            console.log('✅ Created eslint-config.json')
+            console.log('✅ Created eslint.cecilia.json')
           } catch (err) {
-            console.error('❌ Failed to write eslint-config.json:', err)
+            console.error('❌ Failed to write eslint.cecilia.json:', err)
             rl.close()
             process.exit(1)
           }

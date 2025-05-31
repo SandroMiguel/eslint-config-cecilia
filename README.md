@@ -1,4 +1,5 @@
 <p align="center"><img src="https://i.imgur.com/De2l7rX.png" alt="ESLint config Cecilia" /></p>
+<p align="center">📦 Zero-config ESLint + Prettier setup for JS/React/Node projects.</p>
 
 # Welcome to ESLint config Cecilia
 
@@ -51,25 +52,29 @@ yarn cecilia
 
 1. Select "1" or "2" to install the necessary dependencies with npm/Yarn
 1. Select the type of project: React (1) Node (2) Both (3) None (4)
-1. Select "y" to create the `.eslintrc.js` file
+1. Select "y" to create the `eslint.config.js` file
 1. Select "y" to create the `.prettierrc.js` file
 1. Select "y" to add the `lint` script commands in your `package.json`
 
 #### Optional - Override Rules.
 
-Use the `.eslintrc.js` file to override the rules.
+Use the `eslint.config.js` If you want to override or extend the config:
 
 For more information, see "[Configuring Rules](https://eslint.org/docs/user-guide/configuring#configuring-rules)" in the ESLint Help.
 
 ```
-module.exports = {
-  extends: 'cecilia',
-  rules: {
-    //
-    // rules to override.
-    //
+// eslint.config.js
+import cecilia from 'eslint-config-cecilia'
+
+export default [
+  ...cecilia,
+  {
+    rules: {
+      'no-console': 'off',
+      // your custom rules here
+    }
   }
-}
+]
 ```
 
 **Pro tip**

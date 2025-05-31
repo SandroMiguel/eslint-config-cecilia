@@ -3,5 +3,4 @@
 // ESLint config Cecilia: This rule should be ignored.
 // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
 
-/* eslint-disable no-console */
 console.log('hello')
