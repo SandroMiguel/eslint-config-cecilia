@@ -5,7 +5,7 @@
   "type": "module",
   "bin": {
     "cecilia": "./bin/cecilia.mjs",
-    "cecilia:debug": "./bin/debug-config.mjs"
+    "cecilia-debug": "./bin/debug-config.mjs"
   },
   "scripts": {
     "lint": "eslint .",

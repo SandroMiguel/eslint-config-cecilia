@@ -147,7 +147,7 @@ extensions for Visual Studio Code.
 If you want to check the final ESLint config used by Cecilia, run:
 
 ```sh
-npx cecilia:debug
+npx cecilia-debug
 ```
 
 It will print the resolved config, including all extended rules and environments, like this:
