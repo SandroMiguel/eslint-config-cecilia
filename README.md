@@ -58,7 +58,7 @@ yarn cecilia
 
 #### Optional - Override Rules.
 
-Use the `eslint.config.js` If you want to override or extend the config:
+Use the `eslint.config.js` if you want to override or extend the config:
 
 For more information, see "[Configuring Rules](https://eslint.org/docs/user-guide/configuring#configuring-rules)" in the ESLint Help.
 
