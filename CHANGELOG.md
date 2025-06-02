@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.1.0...v3.1.1) (2025-06-02)
+
+
+### Bug Fixes
+
+* **eslint.config.js:** rename eslint-config.json -&gt; eslint.cecilia.json ([dff9f7e](https://github.com/SandroMiguel/eslint-config-cecilia/commit/dff9f7e40b00b18cb1d8c09cf6ae54819a993dfa))
+
 ## [3.1.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.0.4...v3.1.0) (2025-05-31)
 
 
