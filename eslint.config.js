@@ -35,7 +35,7 @@ try {
 
 if (!projectType) {
   throw new Error(
-    '[eslint-config-cecilia] Missing "projectType" in eslint-config.json. Run: npx cecilia',
+    '[eslint-config-cecilia] Missing "projectType" in eslint.cecilia.json. Run: npx cecilia',
   )
 }
 
