@@ -56,11 +56,44 @@ yarn cecilia
 1. Select "y" to create the `.prettierrc.js` file
 1. Select "y" to add the `lint` script commands in your `package.json`
 
-#### Optional - Override Rules.
+#### Optional - Override Rules or Ignore Patterns
 
-Use the `eslint.config.js` if you want to override or extend the config:
+Use the `eslint.config.js` if you want to override, extend or add ignore patterns to the config:
 
-For more information, see "[Configuring Rules](https://eslint.org/docs/user-guide/configuring#configuring-rules)" in the ESLint Help.
+```
+// eslint.config.js
+import cecilia from 'eslint-config-cecilia'
+
+export default [
+  // First block for ignores (optional, to add more ignores)
+  {
+    ignores: [
+      '**/custom-ignored-folder/**',
+    ],
+  },
+
+  // Default cecilia config
+  ...cecilia,
+
+  // Block for custom rules
+  {
+    rules: {
+      'no-console': 'off',
+      // your custom rules here
+    },
+  },
+]
+```
+
+For more information, see "[ESLint Config Files](https://eslint.org/docs/latest/use/configure/configuration-files#using-eslintconfigjs)".
+
+**Pro tip**
+
+Check the [list of available rules](https://eslint.org/docs/rules/).
+
+**Optional - Specifying Environments**
+
+To specify environments, add a block with `env`:
 
 ```
 // eslint.config.js
@@ -69,31 +102,13 @@ import cecilia from 'eslint-config-cecilia'
 export default [
   ...cecilia,
   {
-    rules: {
-      'no-console': 'off',
-      // your custom rules here
-    }
-  }
-]
-```
-
-**Pro tip**
-
-Check the [list of available rules](https://eslint.org/docs/rules/).
-
-**Optional - Specifying Environments**
-
-For more information, see "[Specifying Environments](https://eslint.org/docs/user-guide/configuring#specifying-environments)" in the ESLint Help.
-
-```
-module.exports = {
-  extends: 'cecilia',
-  env: {
-    browser: true,
-    node: true,
-    ...
+    env: {
+      browser: true,
+      node: true,
+      es2023: true,
+    },
   },
-}
+]
 ```
 
 **Optional - Use `.prettierrc.js` file to change some rules**

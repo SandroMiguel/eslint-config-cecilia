@@ -10,7 +10,14 @@ import globals from 'globals'
  */
 export default [
   {
-    ignores: ['test/fixtures/**'],
+    ignores: [
+      '**/node_modules/**',
+      '**/vendor/**',
+      '**/dist/**',
+      '**/build/**',
+      '**/.git/**',
+      'test/fixtures/**',
+    ],
   },
   {
     files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
