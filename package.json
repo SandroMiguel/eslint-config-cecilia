@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "git pull && npm publish"
   },
   "exports": {
     ".": "./eslint.config.js"
