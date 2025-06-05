@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.2](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.1.1...v3.1.2) (2025-06-05)
+
+
+### Bug Fixes
+
+* add ignores to eslint.config.js to exclude node_modules, etc ([cf06398](https://github.com/SandroMiguel/eslint-config-cecilia/commit/cf063981e39322b3943d1c820bc599f30981450f))
+
 ## [3.1.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.1.0...v3.1.1) (2025-06-02)
 
 
