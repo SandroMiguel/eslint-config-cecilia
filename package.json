@@ -14,11 +14,14 @@
     "release": "git pull && npm publish"
   },
   "exports": {
-    ".": "./eslint.config.js"
+    ".": {
+      "import": "./eslint.config.mjs",
+      "require": "./legacy.cjs"
+    }
   },
-  "main": "./eslint.config.js",
+  "main": "./legacy.cjs",
   "files": [
-    "eslint.config.js",
+    "eslint.config.mjs",
     "bin",
     "presets",
     "rules"
