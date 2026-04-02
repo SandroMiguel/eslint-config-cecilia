@@ -8,8 +8,9 @@
 **/log
 yarn-error.log*
 
-## Ignore generated source maps
+## Ignore generated files
 *.map
+*.tgz
 
 ## Yarn - Not using Zero-Installs
 .pnp.*

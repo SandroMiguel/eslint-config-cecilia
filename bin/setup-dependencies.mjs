@@ -9,93 +9,131 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-rl.question(
-  'Install dependencies with npm(1) or yarn(2)? (1/2) ',
-  (pkgManagerInput) => {
-    rl.question(
-      'What type of project is this?\nReact(1), Node(2), Both(3), or None(4)? (1/2/3/4) ',
-      (projectTypeInput) => {
-        const base = [
-          'eslint',
-          'prettier',
-          'eslint-config-prettier',
-          'eslint-plugin-prettier',
-          'eslint-plugin-jsdoc',
-          'eslint-plugin-unicorn',
-        ]
+const ask = (question) =>
+  new Promise((resolve) => rl.question(question, resolve))
 
-        const react = [
-          'eslint-config-airbnb',
-          'eslint-plugin-import',
-          'eslint-plugin-jsx-a11y',
-          'eslint-plugin-react',
-          'eslint-plugin-react-hooks',
-        ]
+;(async () => {
+  // 📦 Package manager
+  const pkgManagerInput = await ask(`
+Which package manager do you use?
 
-        const node = ['eslint-plugin-node']
+1. npm
+2. yarn
+3. pnpm
 
-        const allDeps = [...base]
+› `)
 
-        let projectType = null
+  let pkgManager
 
-        switch (projectTypeInput) {
-          case '1': {
-            allDeps.push(...react)
-            projectType = 'react'
-            break
-          }
-          case '2': {
-            allDeps.push(...node)
-            projectType = 'node'
-            break
-          }
-          case '3': {
-            allDeps.push(...react, ...node)
-            projectType = 'react'
-            break
-          }
-          case '4': {
-            projectType = null
-            break
-          }
-          default: {
-            console.error('❌ Invalid input. Please choose 1, 2, 3 or 4.')
-            rl.close()
-            process.exit(1)
-          }
-        }
+  switch (pkgManagerInput.trim()) {
+    case '1':
+      pkgManager = 'npm'
+      break
+    case '2':
+      pkgManager = 'yarn'
+      break
+    case '3':
+      pkgManager = 'pnpm'
+      break
+    default:
+      console.error('❌ Invalid input. Please choose 1, 2 or 3.')
+      rl.close()
+      process.exit(1)
+  }
 
-        // Criar ficheiro de configuração
-        if (projectType) {
-          const configJson = {
-            projectType,
-          }
+  // 🧱 Project type
+  const projectTypeInput = await ask(`
+What type of project is this?
 
-          try {
-            writeFileSync(
-              'eslint.cecilia.json',
-              JSON.stringify(configJson, null, 2),
-              'utf8',
-            )
-            console.log('✅ Created eslint.cecilia.json')
-          } catch (err) {
-            console.error('❌ Failed to write eslint.cecilia.json:', err)
-            rl.close()
-            process.exit(1)
-          }
-        }
+1. React
+2. Node
+3. Both
+4. None
 
-        const installCommand =
-          pkgManagerInput === '2'
-            ? `yarn add --dev ${allDeps.join(' ')}`
-            : `npm i -D ${allDeps.join(' ')}`
+› `)
 
-        const install = exec(installCommand)
-        install.stdout.pipe(process.stdout)
-        install.stderr.pipe(process.stderr)
+  const base = [
+    'eslint@^9.27.0',
+    'prettier@^3.5.3',
+    'eslint-config-prettier@^10.1.5',
+    'eslint-plugin-prettier@^5.4.1',
+    'eslint-plugin-jsdoc@^50.6.17',
+    'eslint-plugin-unicorn@^59.0.1',
+  ]
 
-        rl.close()
-      },
-    )
-  },
-)
+  const react = [
+    'eslint-config-airbnb@^19.0.4',
+    'eslint-plugin-import@^2.31.0',
+    'eslint-plugin-jsx-a11y@^6.10.2',
+    'eslint-plugin-react@^7.37.5',
+    'eslint-plugin-react-hooks@^5.2.0',
+  ]
+
+  const node = ['eslint-plugin-node']
+
+  const allDeps = [...base]
+  let projectType = null
+
+  switch (projectTypeInput.trim()) {
+    case '1':
+      allDeps.push(...react)
+      projectType = 'react'
+      break
+    case '2':
+      allDeps.push(...node)
+      projectType = 'node'
+      break
+    case '3':
+      allDeps.push(...react, ...node)
+      projectType = 'react'
+      break
+    case '4':
+      projectType = null
+      break
+    default:
+      console.error('❌ Invalid input. Please choose 1, 2, 3 or 4.')
+      rl.close()
+      process.exit(1)
+  }
+
+  // 📝 Config file
+  if (projectType) {
+    try {
+      writeFileSync(
+        'eslint.cecilia.json',
+        JSON.stringify({ projectType }, null, 2),
+        'utf8',
+      )
+      console.log('✅ Created eslint.cecilia.json')
+    } catch (err) {
+      console.error('❌ Failed to write eslint.cecilia.json:', err)
+      rl.close()
+      process.exit(1)
+    }
+  }
+
+  // 📦 Install command
+  let installCommand
+
+  switch (pkgManager) {
+    case 'yarn':
+      installCommand = `yarn add --dev ${allDeps.join(' ')}`
+      break
+    case 'pnpm':
+      installCommand = `pnpm add -D ${allDeps.join(' ')}`
+      break
+    default:
+      installCommand = `npm i -D ${allDeps.join(' ')}`
+  }
+
+  console.log('\n📦 Installing dependencies...\n')
+
+  const install = exec(installCommand)
+  install.stdout.pipe(process.stdout)
+  install.stderr.pipe(process.stderr)
+
+  install.on('close', () => {
+    console.log('\n✅ Dependencies installed!')
+    rl.close()
+  })
+})()

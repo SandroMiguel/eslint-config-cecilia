@@ -4,7 +4,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const indexPath = path.resolve(__dirname, '../eslint.config.js')
+const indexPath = path.resolve(__dirname, '../eslint.config.mjs')
 
 const { default: config } = await import(indexPath)
 

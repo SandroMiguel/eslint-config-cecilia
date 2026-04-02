@@ -52,16 +52,16 @@ yarn cecilia
 
 1. Select "1" or "2" to install the necessary dependencies with npm/Yarn
 1. Select the type of project: React (1) Node (2) Both (3) None (4)
-1. Select "y" to create the `eslint.config.js` file
+1. Select "y" to create the `eslint.config.mjs` file
 1. Select "y" to create the `.prettierrc.js` file
 1. Select "y" to add the `lint` script commands in your `package.json`
 
 #### Optional - Override Rules or Ignore Patterns
 
-Use the `eslint.config.js` if you want to override, extend or add ignore patterns to the config:
+Use the `eslint.config.mjs` if you want to override, extend or add ignore patterns to the config:
 
 ```
-// eslint.config.js
+// eslint.config.mjs
 import cecilia from 'eslint-config-cecilia'
 
 export default [
@@ -96,7 +96,7 @@ Check the [list of available rules](https://eslint.org/docs/rules/).
 To specify environments, add a block with `env`:
 
 ```
-// eslint.config.js
+// eslint.config.mjs
 import cecilia from 'eslint-config-cecilia'
 
 export default [
