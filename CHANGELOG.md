@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.1.2...v3.2.0) (2026-04-02)
+
+
+### Features
+
+* improve CLI setup and add friendly error for legacy usage ([3b6f247](https://github.com/SandroMiguel/eslint-config-cecilia/commit/3b6f2472329d82903d491e4d44ac50d6fe0b82fd))
+
 ## [3.1.2](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.1.1...v3.1.2) (2025-06-05)
 
 
