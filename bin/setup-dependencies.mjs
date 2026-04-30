@@ -56,13 +56,11 @@ What type of project is this?
     'eslint@9.27.0',
     'prettier@3.5.3',
     'eslint-config-prettier@10.1.5',
-    'eslint-plugin-prettier@5.4.1',
-    'eslint-plugin-jsdoc@50.6.17',
+    'eslint-plugin-jsdoc@62.9.0',
     'eslint-plugin-unicorn@59.0.1',
   ]
 
   const react = [
-    'eslint-config-airbnb@19.0.4',
     'eslint-plugin-import@2.31.0',
     'eslint-plugin-jsx-a11y@6.10.2',
     'eslint-plugin-react@7.37.5',

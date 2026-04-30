@@ -1,10 +1,12 @@
 import globals from 'globals'
+import jsdoc from '../rules/jsdoc.js'
+import prettier from 'eslint-config-prettier'
 
 /**
  * Base ESLint configuration for JavaScript.
  * This configuration is intended to be extended by specific project presets.
  * It includes basic settings, language options, and global variables.
- * It does not include any specific rules or plugins.
+ * It includes basic settings and shared rules (e.g. JSDoc, Prettier compatibility).
  *
  * @file presets/index.base.js
  */
@@ -33,7 +35,12 @@ export default [
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
-    plugins: {},
-    rules: {},
+    plugins: {
+      ...jsdoc.plugins,
+    },
+    rules: {
+      ...jsdoc.rules,
+    },
   },
+  prettier,
 ]

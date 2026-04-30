@@ -1,5 +1,5 @@
 <p align="center"><img src="https://i.imgur.com/De2l7rX.png" alt="ESLint config Cecilia" /></p>
-<p align="center">📦 Zero-config ESLint + Prettier setup for JS/React/Node projects with deterministic installs.</p>
+<p align="center">📦 Zero-config ESLint + Prettier setup for JS/React/Node projects with deterministic installs and modern flat config.</p>
 
 # Welcome to ESLint config Cecilia
 
@@ -28,12 +28,13 @@ used in my JavaScript projects ([Vanilla.js](http://vanilla-js.com/),
 
 ## Goals
 
-- I want to use [ESLint](https://eslint.org/) to lint my files
-- I want to use [Prettier](https://www.npmjs.com/package/prettier) to format my code
-- I want to base my rules on the major configs, such as [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+- I want to use [ESLint](https://eslint.org/) to lint my files using the modern flat config
+- I want to use [Prettier](https://www.npmjs.com/package/prettier) as a standalone formatter (not inside ESLint)
+- I want a fast and predictable linting experience (no heavy or legacy configs)
 - I want to keep the code clean and consistent across several projects
-- I don't want to install/maintain/configure ESLint/Prettier/plugins/etc. independently in all projects
-- I want consistent and predictable linting behavior across all environments (no surprises after updates)
+- I want to avoid maintaining complex ESLint setups across projects
+- I want consistent and deterministic linting behavior across all environments
+- I want built-in support for code quality, documentation (JSDoc), and modern best practices
 
 ## Installation
 
@@ -134,10 +135,10 @@ Open the `package.json` file and add the following scripts entries:
   ...
 
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write './**/*.{js,jsx,json}'"
-  },
+    "lint": "eslint \"src/**/*.{js,jsx}\" --cache",
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix --cache",
+    "format": "prettier --write ."
+  }
 
   ...
 ```
@@ -146,11 +147,11 @@ Open the `package.json` file and add the following scripts entries:
 
 #### Run the script
 
-`yarn lint` or `npm run lint` to lint your code.
+`yarn lint` or `npm run lint` to lint your code (fast with cache).
 
 `yarn lint:fix` or `npm run lint:fix` to lint and fix your code.
 
-`yarn format` or `npm run format` to format your code.
+`yarn format` or `npm run format` to format your code using Prettier.
 
 **Pro tip**
 
@@ -169,12 +170,13 @@ This means:
 - The linting results are consistent across machines and environments
 - No unexpected rule changes after reinstalling dependencies
 - Updates only happen when you explicitly upgrade Cecilia
+- No hidden performance regressions caused by third-party configs
 
 This avoids common issues caused by version ranges (e.g. `^`) where plugin updates can silently change linting behavior.
 
 ## Debugging
 
-If you want to check the final ESLint config used by Cecilia, run:
+It will print the resolved config, including all rules and plugins used internally.
 
 ```sh
 npx cecilia-debug
@@ -186,9 +188,7 @@ It will print the resolved config, including all extended rules and environments
 {
   "extends": [
     "./rules/unicorn.js",
-    "./rules/prettier.js",
     "./rules/jsdoc.js",
-    "./rules/airbnb.js",
     "./rules/react-hooks.js",
     "./rules/react.js",
     "./rules/cecilia.js"
@@ -209,26 +209,15 @@ It will print the resolved config, including all extended rules and environments
 ## Credits
 
 - Linting - [ESLint](https://eslint.org/)
-- Rules base config -
-  [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
-- Code formatter config - [Prettier](https://www.npmjs.com/package/prettier)
-- Plugin -
-  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
-- Plugin -
-  [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
-- Plugin -
-  [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
-- Plugin -
-  [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
-- Plugin -
-  [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-- Plugin -
-  [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- Code formatter - [Prettier](https://www.npmjs.com/package/prettier)
+
+### Plugins
+
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+- [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
 - [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
-- IDE coding style - [EditorConfig](https://editorconfig.org/)
-- Logo gear - made by [Freepik](http://www.freepik.com) from
-  [www.flaticon.com](https://www.flaticon.com/) is licensed by
-  [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 
 ## Contributing
 

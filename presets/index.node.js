@@ -13,10 +13,10 @@ export default [
   {
     files: ['**/*.{js,ts}'],
     languageOptions: {
-      ...(base.languageOptions || {}),
+      ...base.languageOptions,
       globals: {
         ...globals.node,
-        ...(base.languageOptions?.globals || {}),
+        ...base.languageOptions?.globals,
       },
     },
   },

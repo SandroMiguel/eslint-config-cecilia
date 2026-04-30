@@ -10,7 +10,6 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 import cecilia from './rules/cecilia.js'
-import prettier from './rules/prettier.js'
 
 const configPath = path.resolve(process.cwd(), 'eslint.cecilia.json')
 
@@ -52,4 +51,4 @@ try {
   )
 }
 
-export default [...presetConfig, prettier, cecilia]
+export default [...presetConfig, cecilia]
