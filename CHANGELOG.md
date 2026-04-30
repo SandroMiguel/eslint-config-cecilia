@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.2.0...v3.2.1) (2026-04-30)
+
+
+### Bug Fixes
+
+* **setup-eslint-config.mjs:** handle legacy .eslintrc files during setup ([bc5affe](https://github.com/SandroMiguel/eslint-config-cecilia/commit/bc5affe71302941ad1aabf03ebf8a1d9510fbb8b))
+
 ## [3.2.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.1.2...v3.2.0) (2026-04-02)
 
 
