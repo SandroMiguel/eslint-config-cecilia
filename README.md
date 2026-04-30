@@ -1,5 +1,5 @@
 <p align="center"><img src="https://i.imgur.com/De2l7rX.png" alt="ESLint config Cecilia" /></p>
-<p align="center">📦 Zero-config ESLint + Prettier setup for JS/React/Node projects.</p>
+<p align="center">📦 Zero-config ESLint + Prettier setup for JS/React/Node projects with deterministic installs.</p>
 
 # Welcome to ESLint config Cecilia
 
@@ -19,6 +19,8 @@ used in my JavaScript projects ([Vanilla.js](http://vanilla-js.com/),
 
 1. [Goals](#goals)
 1. [Installation](#installation)
+1. [Stability](#stability)
+1. [Debugging](#debugging)
 1. [Credits](#credits)
 1. [Contributing](#contributing)
 1. [Questions](#questions)
@@ -31,6 +33,7 @@ used in my JavaScript projects ([Vanilla.js](http://vanilla-js.com/),
 - I want to base my rules on the major configs, such as [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
 - I want to keep the code clean and consistent across several projects
 - I don't want to install/maintain/configure ESLint/Prettier/plugins/etc. independently in all projects
+- I want consistent and predictable linting behavior across all environments (no surprises after updates)
 
 ## Installation
 
@@ -156,6 +159,18 @@ Install
 and
 [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 extensions for Visual Studio Code.
+
+## Stability
+
+Cecilia installs all dependencies using fixed versions to ensure deterministic behavior.
+
+This means:
+
+- The linting results are consistent across machines and environments
+- No unexpected rule changes after reinstalling dependencies
+- Updates only happen when you explicitly upgrade Cecilia
+
+This avoids common issues caused by version ranges (e.g. `^`) where plugin updates can silently change linting behavior.
 
 ## Debugging
 
