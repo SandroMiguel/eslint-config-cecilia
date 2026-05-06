@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.2.1...v3.3.0) (2026-05-06)
+
+
+### Features
+
+* removed airbnb and eslint-plugin-prettier ([ef107fa](https://github.com/SandroMiguel/eslint-config-cecilia/commit/ef107fa1a8ca8c46863047ca0ce3b4b8d35a0f36))
+* update ESLint config and presets for JSDoc rule support ([b55b117](https://github.com/SandroMiguel/eslint-config-cecilia/commit/b55b117ecd56a1394ad24c56ada2c61fb4f9afcc))
+* update ESLint config and presets for JSDoc rule support ([e397ad0](https://github.com/SandroMiguel/eslint-config-cecilia/commit/e397ad05813fc4e306924c2c3e7a6cd7a304994d))
+
+
+### Bug Fixes
+
+* **setup-eslint-config.mjs:** handle legacy .eslintrc files during setup ([bc5affe](https://github.com/SandroMiguel/eslint-config-cecilia/commit/bc5affe71302941ad1aabf03ebf8a1d9510fbb8b))
+
 ## [3.2.1](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.2.0...v3.2.1) (2026-04-30)
 
 
