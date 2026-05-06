@@ -5,7 +5,6 @@
  *
  * The generated scripts use ESLint with cache for better performance
  * and Prettier as a standalone formatter.
- *
  * @file bin/setup-lint.mjs
  */
 

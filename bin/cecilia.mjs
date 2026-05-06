@@ -2,7 +2,6 @@
 
 /**
  * Cecilia CLI entry point.
- *
  * @file bin/cecilia.mjs
  */
 

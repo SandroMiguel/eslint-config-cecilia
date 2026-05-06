@@ -2,7 +2,6 @@
 
 /**
  * Sets up the "eslint.config.mjs" file (Flat Config) with Cecilia preset.
- *
  * @file bin/setup-eslint-config.mjs
  */
 
