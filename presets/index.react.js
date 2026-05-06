@@ -13,7 +13,6 @@ import unicorn from '../rules/unicorn.js'
  * - Optional modern best practices via Unicorn
  *
  * Designed for React projects using flat config.
- *
  * @file presets/index.react.js
  */
 export default [
@@ -36,6 +35,11 @@ export default [
       ...reactHooks.plugins,
       ...react.plugins,
       ...unicorn.plugins,
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
     },
     settings: {
       ...react.settings,

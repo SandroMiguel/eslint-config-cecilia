@@ -3,8 +3,7 @@
  *
  * This configuration dynamically loads the appropriate preset based on the
  * project type specified in the eslint.cecilia.json file.
- *
- * @file eslint.config.js
+ * @file eslint.config.mjs
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -45,6 +44,8 @@ try {
 } catch (error) {
   throw new Error(
     `[eslint-config-cecilia] Unknown or unsupported projectType "${projectType}".\n` +
+      'Failed to import the file: ' +
+      `./presets/index.${projectType}.js\n` +
       '💡 Make sure you ran:\n\n' +
       '   npx cecilia\n\n' +
       error.message,
