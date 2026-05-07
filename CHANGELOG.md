@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.3.0...v3.4.0) (2026-05-07)
+
+
+### Features
+
+* **jsdoc.js:** relax jsdoc lint rules ([5b6a237](https://github.com/SandroMiguel/eslint-config-cecilia/commit/5b6a2372731052d607b050367d88cda81c2e6527))
+
 ## [3.3.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.2.1...v3.3.0) (2026-05-06)
 
 
