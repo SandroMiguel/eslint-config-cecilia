@@ -35,6 +35,7 @@ used in my JavaScript projects ([Vanilla.js](http://vanilla-js.com/),
 - I want to avoid maintaining complex ESLint setups across projects
 - I want consistent and deterministic linting behavior across all environments
 - I want built-in support for code quality, documentation (JSDoc), and modern best practices
+- I want ESLint core recommended rules enabled by default for baseline security and code quality
 
 ## Installation
 
@@ -187,6 +188,7 @@ It will print the resolved config, including all extended rules and environments
 ```json
 {
   "extends": [
+    "@eslint/js (recommended)",
     "./rules/unicorn.js",
     "./rules/jsdoc.js",
     "./rules/react-hooks.js",
@@ -210,6 +212,11 @@ It will print the resolved config, including all extended rules and environments
 
 - Linting - [ESLint](https://eslint.org/)
 - Code formatter - [Prettier](https://www.npmjs.com/package/prettier)
+
+### Core Rules
+
+- [@eslint/js](https://www.npmjs.com/package/@eslint/js) recommended rules
+  - Includes essential rules like `no-undef`, `no-unused-vars`, `no-debugger`, `no-cond-assign`, etc.
 
 ### Plugins
 

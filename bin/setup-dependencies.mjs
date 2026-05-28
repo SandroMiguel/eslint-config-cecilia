@@ -53,7 +53,8 @@ What type of project is this?
 › `)
 
   const base = [
-    'eslint@9.27.0',
+    'eslint@9.35.0',
+    '@eslint/js@9.35.0',
     'prettier@3.5.3',
     'eslint-config-prettier@10.1.5',
     'eslint-plugin-jsdoc@62.9.0',

@@ -1,5 +1,6 @@
 import globals from 'globals'
 import prettier from 'eslint-config-prettier'
+import js from '@eslint/js'
 
 /**
  * Base ESLint configuration for JavaScript.
@@ -32,8 +33,9 @@ export default [
       'test/fixtures/**',
     ],
   },
+  js.configs.recommended,
   {
-    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -46,12 +48,6 @@ export default [
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
-    // ...(isTest
-    //   ? {}
-    //   : {
-    //       plugins: jsdoc.plugins,
-    //       rules: jsdoc.rules,
-    //     }),
   },
   ...jsdocConfig,
   prettier,

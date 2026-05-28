@@ -39,9 +39,8 @@ export default [
     settings: {
       react: {
         version: 'detect',
+        ...react.settings?.react,
       },
-    },
-    settings: {
       ...react.settings,
     },
     rules: {

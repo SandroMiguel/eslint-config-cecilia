@@ -96,6 +96,16 @@ test('no-multiple-empty-lines rule', async () => {
   )
 })
 
+test('no-unused-vars rule', async () => {
+  const ruleId = 'no-unused-vars'
+  const result = await fetchTestFiles(ruleId)
+  const { messages } = result[0]
+  expect(messages[0] && messages[0].ruleId).toBe(
+    ruleId,
+    messages[0] && messages[0].message,
+  )
+})
+
 test('react-hooks/exhaustive-deps rule', async () => {
   const ruleId = 'react-hooks/exhaustive-deps'
   const result = await fetchTestFiles(ruleId)
