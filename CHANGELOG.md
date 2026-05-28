@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.4.0...v3.5.0) (2026-05-28)
+
+
+### Features
+
+* enable ESLint core recommended rules by default ([4aea10b](https://github.com/SandroMiguel/eslint-config-cecilia/commit/4aea10bc86eb4de7601deed3e2b2c98a10481eb5))
+
 ## [3.4.0](https://github.com/SandroMiguel/eslint-config-cecilia/compare/v3.3.0...v3.4.0) (2026-05-07)
 
 
